@@ -48,6 +48,8 @@ image item clock = "Item_Clock.png"
 image item minute = "Item_Clock_Minute.png"
 image item hour = "Item_Clock_Hour.png"
 
+#Sounds
+
 # Declare characters used by this game.
 define jim = Character('Jim', color="#c8ffc8")
 define manager = Character('Manager', color="#c8ffc8")
