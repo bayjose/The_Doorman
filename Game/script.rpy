@@ -6,13 +6,13 @@
 #Menu and logo
 image logo logo = "images/Doorman_Logo.png"
 image logo icon = "images/Doorman_Icon.png"
-#image bg menu = "Bg_Menu.jpg"
+image bg mainMenu = "Bg_Menu.jpg"
 #image bg gameMenu = "Bg_Gmenu.jpg"
-#iamge bg credits = "Bg_Credits.jpg"
+image bg credits = "images/Bg_Credits.jpg"
 
 #Game elements
 #image bg options = "Bg_Options.jpg"
-#image bg difficulty = "Bg_Difficulty.jpg"
+image bg difficulty = "images/Bg_Difficulty.jpg"
 
 #Backgrounds
 image bg lobby = "images/Bg_Lobby.jpg"
@@ -23,6 +23,7 @@ image bg room = "images/Room.jpg"
 image bg jimRoom = "images/Bg_Jimroom.jpg"
 image bg jail = "images/Bg_Jail.jpg"
 image bg shop = "images/Bg_Shop.jpg"
+image bg city = "images/Bg_City.jpg"
 
 #Characters
 image char chris = "images/Char_Chris.png"
@@ -48,7 +49,9 @@ image item clock = "images/Item_Clock.png"
 image item minute = "images/Item_Clock_Minute.png"
 image item hour = "images/Item_Clock_Hour.png"
 
-#Sounds
+#Lose/Win Banners
+image tbox lose = "images/Text_Lose"
+image tbox win = "images/Text_Win"
 
 # Declare characters used by this game.
 define jim = Character('Jim', color="#c8ffc8")
@@ -67,7 +70,7 @@ define owner = Character('Shop Owner', color="#c8ffc8")
 define snore = "sound/snore.ogg"
 play bgmusic
 # Declare all variables that will be used in the game
-#This variable must never be modified, the characters list is dynamic, it can change. fina_characters cannot change ever
+#This variable must never be modified, the characters list is dynamic, it can change. final_characters cannot change ever
 define final_characters = [manager, chris, coach, colonel, edmund, jason, kim, madam]
 define characters = final_characters
 define curTimeHour = 0
@@ -87,6 +90,7 @@ label doormanApartment:
 
     show bg jimRoom
     with dissolve
+    play music "Intro_Music.mp3"
 
     jim "*Yawn* Ugh... looks like it's going to be another boring day for me."
 
@@ -129,6 +133,8 @@ label sleepState
 
 label panCity:
     $ curTimeHour = 8
+    show bg city
+    
     jim "Well here it is Le Grand Monè"
     jim "Wow this place is beautifull"
     jim "I never though that I would ever be able to set foot in a building like this!"
@@ -146,6 +152,9 @@ label loseState:
     with dissolve
 
     officer "You're going to be in jail for a long time for what you've done kid."
+    
+    show tbox lose
+    jim "Drat."
 
     jump credits
     return
@@ -156,6 +165,9 @@ label winState:
     with dissolve
 
     owner "That's a very nice item you have there, that is worth a fortune!"
+    
+    show tbox win
+    jim "Nice!"
 
     jump credits
     return

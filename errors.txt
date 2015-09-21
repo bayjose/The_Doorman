@@ -1,0 +1,33 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 69: play requires a file
+    play bgmusic
+                ^
+
+File "game/script.rpy", line 91: play requires a channel
+    play "Intro_Music.mp3"
+         ^
+
+File "game/script.rpy", line 118: reached end of line when expecting ':'.
+    if daysLeft <= 0
+                    ^
+
+File "game/script.rpy", line 120: expected statement.
+    else
+        ^
+
+File "game/script.rpy", line 122: reached end of line when expecting ':'.
+    "It's late, ill go to bed." if curTimeHour > 17
+                                                   ^
+
+File "game/script.rpy", line 126: expected ':' not found.
+    label sleepState
+                    ^
+
+File "game/script.rpy", line 138: end of line expected.
+    jump homeScreen;
+                   ^
+
+Ren'Py Version: Ren'Py 6.99.6.739
