@@ -6,13 +6,13 @@
 #Menu and logo
 image logo logo = "images/Doorman_Logo.png"
 image logo icon = "images/Doorman_Icon.png"
-#image bg menu = "Bg_Menu.jpg"
-#image bg gameMenu = "Bg_Gmenu.jpg"
-#iamge bg credits = "Bg_Credits.jpg"
-
-#Game elements
-#image bg options = "Bg_Options.jpg"
-#image bg difficulty = "Bg_Difficulty.jpg"
+image mnu textLose = "images/Text_Lose.jpg"
+image mnu textWin = "images/Text_Win.jpg"
+image mnu bgMenu = "images/Bg_Menu.jpg"
+image mnu bgOptions = "images/Bg_Options.jpg"
+image mnu bgDifficulty = "images/Bg_Difficulty.jpg"
+image mnu gameMenu = "images/Bg_Gmenu.jpg"
+image mnu credits = "images/Bg_Credits.jpg"
 
 #Backgrounds
 image bg lobby = "images/Bg_Lobby.jpg"
@@ -52,6 +52,7 @@ image item clock = "images/Item_Clock.png"
 image item minute = "images/Item_Clock_Minute.png"
 image item hour = "images/Item_Clock_Hour.png"
 
+
 # Declare characters used by this game.
 define jim = Character('Jim', color="#c8ffc8")
 define manager = Character('Manager', color="#c8ffc8")
@@ -66,7 +67,17 @@ define officer = Character('Policeman', color="#c8ffc8")
 define owner = Character('Shop Owner', color="#c8ffc8")
 
 # Declare Sounds and Music
+#define music_menu = "sound/"
+#define music_intro = "sound/"
+#define music_lobby = "sound/"
+#define music_night = "sound/"
+#define music_lose = "sound/"
+#define music_win = "sound/"
 define sound_snore = "sound/snore.mp3"
+#define sound_ding = "sound/"
+#define sound_click = "sound/"
+#define sound_door = "sound/"
+#define sound_ring = "sound/"
 
 # Declare all variables that will be used in the game
 #This variable must never be modified, the characters list is dynamic, it can change. fina_characters cannot change ever
@@ -253,10 +264,6 @@ label initiateREM:
     $ curTimeHour = 9
     jump homeScreen
     return
-
-
-
-
 
 label panCity:
     show bg town
