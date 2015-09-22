@@ -6,24 +6,27 @@
 #Menu and logo
 image logo logo = "images/Doorman_Logo.png"
 image logo icon = "images/Doorman_Icon.png"
-image bg mainMenu = "Bg_Menu.jpg"
+#image bg menu = "Bg_Menu.jpg"
 #image bg gameMenu = "Bg_Gmenu.jpg"
-image bg credits = "images/Bg_Credits.jpg"
+#iamge bg credits = "Bg_Credits.jpg"
 
 #Game elements
 #image bg options = "Bg_Options.jpg"
-image bg difficulty = "images/Bg_Difficulty.jpg"
+#image bg difficulty = "Bg_Difficulty.jpg"
 
 #Backgrounds
 image bg lobby = "images/Bg_Lobby.jpg"
 image bg lobbyBlur = "images/Bg_Lobby.jpg"
 image bg elevator = "images/Bg_Elevator.jpg"
 image bg buttons =  "images/Bg_Buttons.jpg"
-image bg room = "images/Room.jpg"
+image bg room = "images/Bg_Room.jpg"
+image bg hall = "images/BG_Hall.jpg"
 image bg jimRoom = "images/Bg_Jimroom.jpg"
+image bg jimRoomNight = "images/Bg_JimRoomNight.png"
+image bg night = "images/Bg_Night.png"
 image bg jail = "images/Bg_Jail.jpg"
 image bg shop = "images/Bg_Shop.jpg"
-image bg city = "images/Bg_City.jpg"
+image bg town = "images/Bg_Town.png"
 
 #Characters
 image char chris = "images/Char_Chris.png"
@@ -49,10 +52,6 @@ image item clock = "images/Item_Clock.png"
 image item minute = "images/Item_Clock_Minute.png"
 image item hour = "images/Item_Clock_Hour.png"
 
-#Lose/Win Banners
-image tbox lose = "images/Text_Lose"
-image tbox win = "images/Text_Win"
-
 # Declare characters used by this game.
 define jim = Character('Jim', color="#c8ffc8")
 define manager = Character('Manager', color="#c8ffc8")
@@ -67,21 +66,24 @@ define officer = Character('Policeman', color="#c8ffc8")
 define owner = Character('Shop Owner', color="#c8ffc8")
 
 # Declare Sounds and Music
-define snore = "sound/snore.ogg"
-play bgmusic
+define sound_snore = "sound/snore.mp3"
+
 # Declare all variables that will be used in the game
-#This variable must never be modified, the characters list is dynamic, it can change. final_characters cannot change ever
+#This variable must never be modified, the characters list is dynamic, it can change. fina_characters cannot change ever
 define final_characters = [manager, chris, coach, colonel, edmund, jason, kim, madam]
 define characters = final_characters
-define curTimeHour = 0
+define curTimeHour = 17
 define curTimeMin = 0
 define daysLeft = 3
+define floorNumber = 0
+define roomNumber = 0
 # The game starts here.
 
 label start:
     #show char jim
+    show bg night
     show char jason
-    jason "test"
+    hide char jason
     jump doormanApartment
     return
 
@@ -90,7 +92,6 @@ label doormanApartment:
 
     show bg jimRoom
     with dissolve
-    play music "Intro_Music.mp3"
 
     jim "*Yawn* Ugh... looks like it's going to be another boring day for me."
 
@@ -110,51 +111,186 @@ label doormanApartment:
     manager "*click*"
     jim "... He meant 5pm, right?"
 
+    hide item phone
     jump panCity
 
     return
+
 label homeScreen:
     show bg lobby
     with dissolve
 
-    if daysLeft <= 0
-        jump loseState
-    else
-    menu:
-        "It's late, ill go to bed." if curTimeHour > 17
+    define addHours = round(curTimeMin / 60)
+    $ curTimeMin = curTimeMin - (addHours * 60)
+    $ curTimeHour = curTimeHour + addHours
+    $ curTimeMin = curTimeMin % 60
+
+
+    jim "Wow is the time alrady [curTimeHour] , [curTimeMin]"
+    if curTimeHour >= 24:
+        jim "Dang man, it's super late! I need to go to bed now"
         jump sleepState
+
+    if curTimeHour >= 20:
+        jim "Wow its getting late. I may want to go try to steel something soon..."
+
+    if daysLeft <= 0:
+        jump loseState
+
+    if daysLeft > 0:
+        menu:
+            "I'm gonna wait around for an hour or so" if curTimeHour >= 20:
+                $ curTimeHour = curTimeHour + 1
+                jump homeScreen
+            "I'm gonna wait around for a half hour or so" if curTimeHour >= 20:
+                $ curTimeMin = curTimeMin + 30
+                jump homeScreen
+            "I'm gonna wait around for a five minutes or so" if curTimeHour >= 20:
+                $ curTimeMin = curTimeMin + 5
+                jump homeScreen
+            "Ok this is it, im going to go steal something!" if curTimeHour > 20:
+                jump elevator
+            "It's late, ill go to bed." if curTimeHour > 20:
+                jump sleepState
+            "Oh! Someones at the door!" if curTimeHour <= 20:
+                $ curTimeHour = curTimeHour + 1
+                jump pickChar
+    hide bg lobby
     return
 
-label sleepState
-    jim "..."
-    jim "...ZZZ..."
-    jim ".......ZZZZZZ"
+label pickChar:
+
+    #eventualy use random to pick a character, for now just jump jason
+    jump talkJason
     return
+
+label elevator:
+    show bg elevator
+    with dissolve
+
+    jim "Well, here I am, ready to go in "
+    show bg buttons
+    with dissolve
+    jim "which floor should I go to?"
+    menu:
+        "2":
+            $ floorNumber = 2
+        "3":
+            $ floorNumber = 3
+    # vpunch to go here
+    show bg elevator
+    with dissolve
+    # ding, possible doors opening animation
+    $ renpy.pause(1.0)
+    show bg hall
+    with dissolve
+    $ renpy.pause(1.0)
+    #play the movement sound
+
+    $ renpy.pause(0.25)
+
+    $ renpy.pause(0.25)
+
+    $ renpy.pause(0.25)
+    #play Ding
+    jim "Now which room was it again?"
+    menu:
+        "[floorNumber]01":
+            $ roomNumber = 1
+        "[floorNumber]02":
+            $ roomNumber = 2
+        "[floorNumber]03":
+            $ roomNumber = 3
+        "[floorNumber]04":
+            $ roomNumber = 4
+    $ renpy.pause(1.0)
+    jim "Ok, here I go... Room [floorNumber]0[roomNumber]"
+    if floorNumber == 2:
+        if roomNumber == 1:
+            jump jailState
+        if roomNumber == 2:
+            jump jailState
+        if roomNumber == 3:
+            jump jailState
+        if roomNumber == 4:
+            jump jailState
+    if floorNumber == 3:
+        if roomNumber == 1:
+            jump jailState
+        if roomNumber == 2:
+            jump jasonRoom
+        if roomNumber == 3:
+            jump jailState
+        if roomNumber == 4:
+            jump jailState
+
+    return
+
+#Sleeping stuff
+label sleepState:
+    show bg jimRoomNight
+    with dissolve
+    $ renpy.pause(1.0)
+    jump initiateREM
+    return
+
+label initiateREM:
+    show bg jimRoomNight
+    with dissolve
+    $ renpy.pause(0.5)
+    show bg night
+    with dissolve
+    $ renpy.pause(4.0)
+    jim "..."
+    play sound sound_snore
+    jim "...ZZZ..."
+    play sound sound_snore
+    jim ".......ZZZZZZ"
+    show bg jimRoom
+    with dissolve
+    $ renpy.pause(0.5)
+    $ daysLeft = daysLeft - 1
+    $ curTimeHour = 9
+    jump homeScreen
+    return
+
+
+
+
 
 label panCity:
+    show bg town
+    with dissolve
+    $ renpy.pause(3.0)
+    show bg town:
+        xpos -1920 ypos 0 xanchor 0 yanchor 0
+        linear 8.0 xpos 0 ypos 0
+    with dissolve
+
+    $ renpy.pause(8.0)
+
     $ curTimeHour = 8
-    show bg city
-    
     jim "Well here it is Le Grand Monè"
     jim "Wow this place is beautifull"
     jim "I never though that I would ever be able to set foot in a building like this!"
     jim "And to think that I get to live here during the week now, this is so fortunate for me."
-    jump homeScreen;
+    jump homeScreen
     return
 
 label doorRoom:
 
     return
 
-label loseState:
-
+label jailState:
     show bg jail
     with dissolve
 
     officer "You're going to be in jail for a long time for what you've done kid."
-    
-    show tbox lose
-    jim "Drat."
+    jump loseState
+    return
+
+label loseState:
+
 
     jump credits
     return
@@ -165,9 +301,6 @@ label winState:
     with dissolve
 
     owner "That's a very nice item you have there, that is worth a fortune!"
-    
-    show tbox win
-    jim "Nice!"
 
     jump credits
     return
