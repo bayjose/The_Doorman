@@ -1,0 +1,8 @@
+Kim = 201
+Chris =202
+Jim = 203
+Coach = 204
+Sir Edmond = 301
+Jason = 302
+Madam Feline =303
+Colonel Ketchup = 304

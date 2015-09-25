@@ -32,7 +32,7 @@ image bg town = "images/Bg_Town.png"
 image char chris = "images/Char_Chris.png"
 image char coach = "images/Char_Coach.png"
 image char colonel = "images/Char_Colonel.png"
-image char edmund = "images/Char_Edmond.png"
+image char edmond = "images/Char_Edmond.png"
 image char jason = "images/Char_Jason.png"
 image char kim = "images/Char_Kim.png"
 image char madam = "images/Char_Madam.png"
@@ -80,21 +80,89 @@ define sound_snore = "sound/snore.mp3"
 #define sound_ring = "sound/"
 
 # Declare all variables that will be used in the game
-#This variable must never be modified, the characters list is dynamic, it can change. fina_characters cannot change ever
-define final_characters = [manager, chris, coach, colonel, edmund, jason, kim, madam]
-define characters = final_characters
 define curTimeHour = 17
 define curTimeMin = 0
 define daysLeft = 3
 define floorNumber = 0
 define roomNumber = 0
+define tempRandom = 0
+
+#Time constant to advance time by per interaction with person.
+define timeConstant = 5
+
+#Boolean flags
+define talked_chris   = 0
+define talked_coach   = 0
+define talked_colonel = 0
+define talked_edmund  = 0
+define talked_jason   = 0
+define talked_kim     = 0
+define talked_madam   = 0
+define talked_to_everyone = 0
+
+# Item Index is set here, this index is the predetermined best item that you are trying to get.
+define itemIndex = 0
+# 0 = Madam Feline = DNA SPLICER
+# 1 = Chris = BAG OF MAGIC FLOUR
+# 2 = Jason = GOLDEN FLEECE BLANKET
+# 3 = Coach Dave = DEFLATED FOOTBALL
+# 4 = Sir Edmond = DIAMOND POCKET WATCH
+# 5 = Kim = HIGH HEELS
+# 6 = Colonel Ketchup = CANDLE STICK
+
+#All of these variables can be used in dialouge with the other inhabitants of the hotel
+#These pieces of data relate directly to the character who is being stolen from
+define itemName               = ""
+define targetCharacterName    = ""
+define targetCharacterFloor   = 0
+define targetCharacterRoom    = 0
+define targetCharacterHourOut = 0
+define targetCharacterHourIn  = 0
 # The game starts here.
 
 label start:
-    #show char jim
-    show bg night
-    show char jason
-    hide char jason
+    $ itemIndex = renpy.random.randint(0,6)
+    if itemIndex == 0:
+        $ itemName = "Dna Splicer"
+        $ targetCharacterName = "Madam Feline"
+        $ targetCharacterFloor = 3
+        $ targetCharacterRoom  = 3
+    if itemIndex == 1:
+        $ itemName = "Bag of Magic Flour"
+        $ targetCharacterName = "Chris"
+        $ targetCharacterFloor = 2
+        $ targetCharacterRoom  = 2
+    if itemIndex == 2:
+        $ itemName = "Golden Fleece"
+        $ targetCharacterName = "Jason"
+        $ targetCharacterFloor = 3
+        $ targetCharacterRoom  = 2
+    if itemIndex == 3:
+        $ itemName = "Deflated Football"
+        $ targetCharacterName = "Coach"
+        $ targetCharacterFloor = 2
+        $ targetCharacterRoom  = 4
+    if itemIndex == 4:
+        $ itemName = "Diamond Pocket Watch"
+        $ targetCharacterName = "Sir Edmond"
+        $ targetCharacterFloor = 3
+        $ targetCharacterRoom  = 1
+    if itemIndex == 5:
+        $ itemName = "High Heels"
+        $ targetCharacterName = "Kim"
+        $ targetCharacterFloor = 2
+        $ targetCharacterRoom  = 1
+    if itemIndex == 6:
+        $ itemName = "Candle Stick"
+        $ targetCharacterName = "Colonel Ketchup"
+        $ targetCharacterFloor = 3
+        $ targetCharacterRoom  = 4
+    jim "Ok, the target item this game is to steel [itemName] from [targetCharacterName]"
+
+    jump initialize
+    return
+
+label initialize:
     jump doormanApartment
     return
 
@@ -159,20 +227,88 @@ label homeScreen:
             "I'm gonna wait around for a five minutes or so" if curTimeHour >= 20:
                 $ curTimeMin = curTimeMin + 5
                 jump homeScreen
-            "Ok this is it, im going to go steal something!" if curTimeHour > 20:
+            "Ok this is it, im going to go steal something!" if curTimeHour >= 20:
                 jump elevator
-            "It's late, ill go to bed." if curTimeHour > 20:
+            "It's late, ill go to bed." if curTimeHour >= 20:
                 jump sleepState
-            "Oh! Someones at the door!" if curTimeHour <= 20:
-                $ curTimeHour = curTimeHour + 1
-                jump pickChar
+            "Oh! Someones at the door!" if talked_to_everyone < 1:
+                    $ curTimeHour = curTimeHour + 1
+                    jump pickChar
+            "Well, ive talked to everyone, better wait untill tonight to make my move" if talked_to_everyone >= 1:
+                    show bg jimRoom
+                    with dissolve
+                    $ renpy.pause(1.0)
+                    show bg jimRoomNight
+                    with dissolve
+                    $ renpy.pause(1.0)
+                    $ curTimeMin = 30
+                    $ curTimeHour = 20;
+                    jim "Alright Here I go!"
+                    jump homeScreen
     hide bg lobby
     return
 
 label pickChar:
+    $ tempRandom = renpy.random.randint(0, 6)
+    if tempRandom == 0:
+        if talked_kim == 0:
+            $ talked_kim = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkKim
+    if tempRandom == 1:
+        if talked_coach == 0:
+            $ talked_coach = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkCoach
+    if tempRandom == 2:
+        if talked_jason == 0:
+            $ talked_jason = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkJason
+    if tempRandom == 3:
+        if talked_chris == 0:
+            $ talked_chris = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkChris
+    if tempRandom == 4:
+        if talked_madam == 0:
+            $ talked_madam = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkMadamFeline
+    if tempRandom == 5:
+        if talked_edmund == 0:
+            $ talked_edmund = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkSirEdmond
+    if tempRandom == 6:
+        if talked_colonel == 0:
+            $ talked_colonel = 1
+            $ tempRandom = renpy.random.randint(0, 6)
+            jump talkColonelKetchup
 
+    if talked_kim == 1:
+        if talked_coach == 1:
+            if talked_jason == 1:
+                if talked_chris == 1:
+                    if talked_madam == 1:
+                        if talked_edmund == 1:
+                            if talked_colonel == 1:
+                                $ talked_to_everyone = 1
+                                jim "I seem to have talked to everyone, there is nobody at the door"
+                                jim "I guess i'd better wait until tonight, then go make my move."
+                                show bg jimRoom
+                                with dissolve
+                                $ renpy.pause(1.0)
+                                show bg jimRoomNight
+                                with dissolve
+                                $ renpy.pause(1.0)
+                                $ curTimeMin = 30
+                                $ curTimeHour = 20;
+                                jim "Alright Here I go!"
+                                jump homeScreen
+
+    jump pickChar
     #eventualy use random to pick a character, for now just jump jason
-    jump talkJason
     return
 
 label elevator:
@@ -218,22 +354,23 @@ label elevator:
     jim "Ok, here I go... Room [floorNumber]0[roomNumber]"
     if floorNumber == 2:
         if roomNumber == 1:
-            jump jailState
+            jump kimRoom
         if roomNumber == 2:
-            jump jailState
+            jump chrisRoom
         if roomNumber == 3:
+            jim "This is my room..."
             jump jailState
         if roomNumber == 4:
-            jump jailState
+            jump coachRoom
     if floorNumber == 3:
         if roomNumber == 1:
-            jump jailState
+            jump sirEdmondRoom
         if roomNumber == 2:
             jump jasonRoom
         if roomNumber == 3:
-            jump jailState
+            jump madamFelineRoom
         if roomNumber == 4:
-            jump jailState
+            jump colonelKetchupRoom
 
     return
 
