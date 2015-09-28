@@ -23,8 +23,8 @@ label kimRoom:
             $ renpy.pause(1.0)
             kim "Like what are you doing here? This is like my house..."
             show char kim
-            jim "Err... Umm... I totally was NOT trying to steel anything from you."
-            kim "Like I just totally tweeted a picture of you standing here, and all of my folowers saw"
+            jim "Err... Umm... I totally was NOT trying to steal anything from you."
+            kim "Like I just totally tweeted a picture of you standing here, and all of my followers saw"
             kim "The cops like totally know too, so you're in a bit of trouble here."
             $ renpy.pause(1.0)
             hide char kim
@@ -39,8 +39,8 @@ label kimRoom:
                         $ renpy.pause(1.0)
                         kim "Like what are you doing here? This is like my house..."
                         show char kim
-                        jim "Err... Umm... I totally was NOT trying to steel anything from you."
-                        kim "Like I just totally tweeted a picture of you standing here, and all of my folowers saw"
+                        jim "Err... Umm... I totally was NOT trying to steal anything from you."
+                        kim "Like I just totally tweeted a picture of you standing here, and all of my followers saw"
                         kim "The cops like totally know too, so you're in a bit of trouble here."
                         $ renpy.pause(1.0)
                         hide char kim
@@ -49,8 +49,8 @@ label kimRoom:
                         $ renpy.pause(1.0)
                         kim "Like what are you doing here? This is like my house..."
                         show char kim
-                        jim "Err... Umm... I totally was NOT trying to steel anything from you."
-                        kim "Like I just totally tweeted a picture of you standing here, and all of my folowers saw"
+                        jim "Err... Umm... I totally was NOT trying to steal anything from you."
+                        kim "Like I just totally tweeted a picture of you standing here, and all of my followers saw"
                         kim "The cops like totally know too, so you're in a bit of trouble here."
                         $ renpy.pause(1.0)
                         hide char kim
@@ -66,8 +66,8 @@ label kimRoom:
                 $ renpy.pause(1.0)
                 kim "Like what are you doing here? This is like my house..."
                 show char kim
-                jim "Err... Umm... I totally was NOT trying to steel anything from you."
-                kim "Like I just totally tweeted a picture of you standing here, and all of my folowers saw"
+                jim "Err... Umm... I totally was NOT trying to steal anything from you."
+                kim "Like I just totally tweeted a picture of you standing here, and all of my followers saw"
                 kim "The cops like totally know too, so you're in a bit of trouble here."
                 $ renpy.pause(1.0)
                 hide char kim
@@ -75,8 +75,8 @@ label kimRoom:
     else:
         kim "Like what are you doing here? This is like my house..."
         show char kim
-        jim "Err... Umm... I totally was NOT trying to steel anything from you."
-        kim "Like I just totally tweeted a picture of you standing here, and all of my folowers saw"
+        jim "Err... Umm... I totally was NOT trying to steal anything from you."
+        kim "Like I just totally tweeted a picture of you standing here, and all of my followers saw"
         kim "The cops like totally know too, so you're in a bit of trouble here."
         $ renpy.pause(1.0)
         hide char kim
