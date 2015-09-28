@@ -16,17 +16,18 @@ image mnu credits = "images/Bg_Credits.jpg"
 
 #Backgrounds
 image bg lobby = "images/Bg_Lobby.jpg"
-image bg lobbyBlur = "images/Bg_Lobby.jpg"
+image bg lobbyBlur = "images/Bg_Lobbyblur.jpg"
 image bg elevator = "images/Bg_Elevator.jpg"
 image bg buttons =  "images/Bg_Buttons.jpg"
 image bg room = "images/Bg_Room.jpg"
 image bg hall = "images/BG_Hall.jpg"
+image bg door = "images/Bg_Door.png"
 image bg jimRoom = "images/Bg_Jimroom.jpg"
 image bg jimRoomNight = "images/Bg_JimRoomNight.png"
 image bg night = "images/Bg_Night.png"
 image bg jail = "images/Bg_Jail.jpg"
 image bg shop = "images/Bg_Shop.jpg"
-image bg town = "images/Bg_Town.png"
+image bg town = "images/Bg_City.jpg"
 
 #Characters
 image char chris = "images/Char_Chris.png"
@@ -56,24 +57,25 @@ image item hour = "images/Item_Clock_Hour.png"
 # Declare characters used by this game.
 define jim = Character('Jim', color="#c8ffc8")
 define manager = Character('Manager', color="#c8ffc8")
-define chris = Character('Chris', color="#c8ffc8")
-define coach = Character('Coach', color="#c8ffc8")
-define colonel = Character('Colonel Ketchup', color="#c8ffc8")
-define edmund = Character('Edmund', color="#c8ffc8")
-define jason = Character('jason', color="#c8ffc8")
-define kim = Character('Kim', color="#c8ffc8")
+define chris = Character('Chris', color="#2096bb")
+define coach = Character('Coach', color="#bd8024")
+define colonel = Character('Colonel Ketchup', color="#183893")
+define edmund = Character('Edmund', color="#cb00b9")
+define jason = Character('jason', color="#ad111c")
+define kim = Character('Kim', color="#baebae")
 define madam = Character('Madam Feline', color="#c8ffc8")
-define officer = Character('Policeman', color="#c8ffc8")
-define owner = Character('Shop Owner', color="#c8ffc8")
+define officer = Character('Policeman', color="#000f59")
+define owner = Character('Shop Owner', color="#b1a563")
 
 # Declare Sounds and Music
-#define music_menu = "sound/"
-#define music_intro = "sound/"
-#define music_lobby = "sound/"
-#define music_night = "sound/"
+define music_menu = "sound/Music_Menu.mp3"
+define music_intro = "sound/Music_Intro.mp3"
+define music_lobby = "sound/Music_Lobby.mp3"
+define music_night = "sound/Music_Night.mp3"
 #define music_lose = "sound/"
 #define music_win = "sound/"
 define sound_snore = "sound/snore.mp3"
+define sound_siren = "sound/siren.wav"
 #define sound_ding = "sound/"
 #define sound_click = "sound/"
 #define sound_door = "sound/"
@@ -89,6 +91,7 @@ define tempRandom = 0
 
 #Time constant to advance time by per interaction with person.
 define timeConstant = 5
+define musicFadeoutConstant = 8.0
 
 #Boolean flags
 define talked_chris   = 0
@@ -121,48 +124,75 @@ define targetCharacterHourIn  = 0
 # The game starts here.
 
 label start:
+    play music music_menu
     $ itemIndex = renpy.random.randint(0,6)
     if itemIndex == 0:
         $ itemName = "Dna Splicer"
         $ targetCharacterName = "Madam Feline"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 3
+        $ targetCharacterHourOut = 20
+        $ targetCharacterHourIn = 21
     if itemIndex == 1:
         $ itemName = "Bag of Magic Flour"
         $ targetCharacterName = "Chris"
         $ targetCharacterFloor = 2
         $ targetCharacterRoom  = 2
+        $ targetCharacterHourOut = 21
+        $ targetCharacterHourIn = 22
     if itemIndex == 2:
         $ itemName = "Golden Fleece"
         $ targetCharacterName = "Jason"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 2
+        $ targetCharacterHourOut = 22
+        $ targetCharacterHourIn = 23
     if itemIndex == 3:
         $ itemName = "Deflated Football"
         $ targetCharacterName = "Coach"
         $ targetCharacterFloor = 2
         $ targetCharacterRoom  = 4
+        $ targetCharacterHourOut = 23
+        $ targetCharacterHourIn = 24
     if itemIndex == 4:
         $ itemName = "Diamond Pocket Watch"
         $ targetCharacterName = "Sir Edmond"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 1
+        $ targetCharacterHourOut = 22
+        $ targetCharacterHourIn = 23
     if itemIndex == 5:
         $ itemName = "High Heels"
         $ targetCharacterName = "Kim"
         $ targetCharacterFloor = 2
         $ targetCharacterRoom  = 1
+        $ targetCharacterHourOut = 20
+        $ targetCharacterHourIn = 24
     if itemIndex == 6:
         $ itemName = "Candle Stick"
         $ targetCharacterName = "Colonel Ketchup"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 4
+        $ targetCharacterHourOut = 20
+        $ targetCharacterHourIn = 21
     jim "Ok, the target item this game is to steel [itemName] from [targetCharacterName]"
 
     jump initialize
     return
 
 label initialize:
+    show mnu bgDifficulty
+    with dissolve
+    "Select a difficulty."
+    menu:
+        "Easy":
+            $ daysLeft = 7;
+        "Medium":
+            $ daysLeft = 3;
+        "Hard":
+            $ daysLeft = 1;
+    stop music fadeout musicFadeoutConstant
+    play music music_intro fadein 2.0
     jump doormanApartment
     return
 
@@ -212,6 +242,12 @@ label homeScreen:
 
     if curTimeHour >= 20:
         jim "Wow its getting late. I may want to go try to steel something soon..."
+        $ soundPlaying = renpy.music.get_playing(channel='music')
+        if soundPlaying == music_night:
+            jim "It's already night."
+        else:
+            stop music fadeout musicFadeoutConstant
+            play music music_night fadein 2.0
 
     if daysLeft <= 0:
         jump loseState
@@ -243,12 +279,16 @@ label homeScreen:
                     $ renpy.pause(1.0)
                     $ curTimeMin = 30
                     $ curTimeHour = 20;
+                    stop music fadeout musicFadeoutConstant
+                    play music music_night fadein 2.0
                     jim "Alright Here I go!"
                     jump homeScreen
     hide bg lobby
     return
 
 label pickChar:
+    show bg lobbyBlur
+    with dissolve
     $ tempRandom = renpy.random.randint(0, 6)
     if tempRandom == 0:
         if talked_kim == 0:
@@ -305,6 +345,8 @@ label pickChar:
                                 $ curTimeMin = 30
                                 $ curTimeHour = 20;
                                 jim "Alright Here I go!"
+                                stop music fadeout musicFadeoutConstant
+                                play music music_night fadein 2.0
                                 jump homeScreen
 
     jump pickChar
@@ -352,6 +394,13 @@ label elevator:
             $ roomNumber = 4
     $ renpy.pause(1.0)
     jim "Ok, here I go... Room [floorNumber]0[roomNumber]"
+    show bg door
+    with dissolve
+    $ renpy.pause(1.0)
+    jim "Ok here I am at the door, I should go in"
+    show bg room
+    with dissolve
+    $ renpy.pause(1.0)
     if floorNumber == 2:
         if roomNumber == 1:
             jump kimRoom
@@ -359,7 +408,8 @@ label elevator:
             jump chrisRoom
         if roomNumber == 3:
             jim "This is my room..."
-            jump jailState
+            jim "Well it is late, guess I'll just go to bed."
+            jump sleepState
         if roomNumber == 4:
             jump coachRoom
     if floorNumber == 3:
@@ -388,36 +438,39 @@ label initiateREM:
     $ renpy.pause(0.5)
     show bg night
     with dissolve
-    $ renpy.pause(4.0)
-    jim "..."
+    $ renpy.pause(2.0)
     play sound sound_snore
-    jim "...ZZZ..."
+    $ renpy.pause(3.0)
     play sound sound_snore
-    jim ".......ZZZZZZ"
+    $ renpy.pause(3.0)
     show bg jimRoom
     with dissolve
     $ renpy.pause(0.5)
     $ daysLeft = daysLeft - 1
     $ curTimeHour = 9
+    stop music fadeout musicFadeoutConstant
+    play music music_lobby fadein 2.0
     jump homeScreen
     return
 
 label panCity:
-    show bg town
+    show bg town:
+        xpos -1920 ypos 0 xanchor 0 yanchor 0
     with dissolve
-    $ renpy.pause(3.0)
+    $ renpy.pause(1.0)
     show bg town:
         xpos -1920 ypos 0 xanchor 0 yanchor 0
         linear 8.0 xpos 0 ypos 0
-    with dissolve
 
-    $ renpy.pause(8.0)
+    $ renpy.pause(6.0)
 
-    $ curTimeHour = 8
+    $ curTimeHour = 6
     jim "Well here it is Le Grand Monè"
     jim "Wow this place is beautifull"
     jim "I never though that I would ever be able to set foot in a building like this!"
     jim "And to think that I get to live here during the week now, this is so fortunate for me."
+    stop music fadeout musicFadeoutConstant
+    play music music_lobby fadein 2.0
     jump homeScreen
     return
 
@@ -428,7 +481,9 @@ label doorRoom:
 label jailState:
     show bg jail
     with dissolve
-
+    play sound sound_siren
+    $ renpy.pause(1.0)
+    play sound sound_siren
     officer "You're going to be in jail for a long time for what you've done kid."
     jump loseState
     return

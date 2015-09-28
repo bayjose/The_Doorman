@@ -1,8 +1,4 @@
 label talkSirEdmond:
-    hide bg lobby
-    with dissolve
-    show bg lobbyBlur
-    with dissolve
     show char edmond
     $ renpy.pause(1.0)
     if itemIndex == 4:
@@ -22,4 +18,67 @@ label talkSirEdmondNotItem:
     return
 
 label sirEdmondRoom:
+    if itemIndex == 4:
+        if curTimeHour < targetCharacterHourOut:
+            $ renpy.pause(1.0)
+            edmund "What are you doing here good sir?"
+            show char edmond
+            jim "Err... Umm... I totally was NOT trying to steel anything from you."
+            edmund "Goodness, pesants are very presistant with their lies."
+            edmund "I'm contacting the authorities!"
+            $ renpy.pause(1.0)
+            hide char edmond
+            jump jailState
+
+        if curTimeHour >= targetCharacterHourOut:
+            if curTimeHour < targetCharacterHourIn:
+                jim "[targetCharacterName] shouldn't be here now, it's [curTimeHour] [curTimeMin]"
+                jim "now where should I look?"
+                menu:
+                    "Under the bed.":
+                        $ renpy.pause(1.0)
+                        edmund "What are you doing here good sir?"
+                        show char edmond
+                        jim "Err... Umm... I totally was NOT trying to steel anything from you."
+                        edmund "Goodness, pesants are very presistant with their lies."
+                        edmund "I'm contacting the authorities!"
+                        $ renpy.pause(1.0)
+                        hide char edmond
+                        jump jailState
+                    "In the nightstand.":
+                        $ renpy.pause(1.0)
+                        show item flour
+                        jim "I got it!"
+                        jim "WOW this [itemName] is made completely out of diamonds."
+                        jim "Now to sell this, and make my fortune!"
+                        jump winState
+                    "Under the table.":
+                        $ renpy.pause(1.0)
+                        edmund "What are you doing here good sir?"
+                        show char edmond
+                        jim "Err... Umm... I totally was NOT trying to steel anything from you."
+                        edmund "Goodness, pesants are very presistant with their lies."
+                        edmund "I'm contacting the authorities!"
+                        $ renpy.pause(1.0)
+                        hide char edmond
+                        jump jailState
+            if curTimeHour > targetCharacterHourIn:
+                $ renpy.pause(1.0)
+                edmund "What are you doing here good sir?"
+                show char edmond
+                jim "Err... Umm... I totally was NOT trying to steel anything from you."
+                edmund "Goodness, pesants are very presistant with their lies."
+                edmund "I'm contacting the authorities!"
+                $ renpy.pause(1.0)
+                hide char edmond
+                jump jailState
+    else:
+        edmund "What are you doing here good sir?"
+        show char edmond
+        jim "Err... Umm... I totally was NOT trying to steel anything from you."
+        edmund "Goodness, pesants are very presistant with their lies."
+        edmund "I'm contacting the authorities!"
+        $ renpy.pause(1.0)
+        hide char edmond
+        jump jailState
     return

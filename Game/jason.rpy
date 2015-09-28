@@ -1,8 +1,4 @@
 label talkJason:
-    hide bg lobby
-    with dissolve
-    show bg lobbyBlur
-    with dissolve
     show char jason
     if itemIndex == 2:
         jump talkJasonItem
@@ -490,71 +486,75 @@ label talkJasonNotItem:
     return
 
 label jasonRoom:
-    show bg room
-    with dissolve
-    $ renpy.pause(1.0)
-    jim "Ok here I am at the door, I should go in"
-    show bg room
-    with dissolve
-    $ renpy.pause(1.0)
-    jim "Sweet i'm in, and I think that this is Jason's room!, now to steel that Fleece"
+    if itemIndex == 2:
+        jim "Sweet i'm in, and I think that this is Jason's room!, now to steel that Fleece"
 
-    if curTimeHour < 22:
-        $ renpy.pause(1.0)
-        show char jason
-        jason "JIM!? what are you doing here?"
-        $ renpy.pause(0.5)
-        jim "Uhhh..."
-        jason "Thats it man, I'm callin' the Cops!"
-        # play sound siren
-        $ renpy.pause(0.5)
-        hide char jason
-        jump jailState
-
-    if curTimeHour >= 22:
-        if curTimeHour < 23:
-            jim "Jason should be at his party now, its [curTimeHour] [curTimeMin]"
-            jim "now where should I look?"
-            menu:
-                "Under the bed.":
-                    $ renpy.pause(1.0)
-                    show item fleece
-                    jim "Sweet I got it!"
-                    jim "THIS IS SOLID GOLD!?!"
-                    jim "Now I need to sell it and make my fortune"
-                    jump winState
-                "In the closet.":
-                    $ renpy.pause(1.0)
-                    jason "JIM!? what are you doing here?"
-                    $ renpy.pause(0.5)
-                    show char jason
-                    jim "Uhhh..."
-                    jason "Thats it man, I'm callin' the Cops!"
-                    # play sound siren
-                    $ renpy.pause(0.5)
-                    hide char jason
-                    jump jailState
-                "In the nightstand.":
-                    $ renpy.pause(1.0)
-                    jason "JIM!? what are you doing here?"
-                    $ renpy.pause(0.5)
-                    show char jason
-                    jim "Uhhh..."
-                    jason "Thats it man, I'm callin' the Cops!"
-                    # play sound siren
-                    $ renpy.pause(0.5)
-                    hide char jason
-                    jump jailState
-        if curTimeHour > 23:
+        if curTimeHour < 22:
             $ renpy.pause(1.0)
+            show char jason
             jason "JIM!? what are you doing here?"
             $ renpy.pause(0.5)
-            show char jason
             jim "Uhhh..."
-            jason "Thats it man, I' callin' the Cops!"
+            jason "Thats it man, I'm callin' the Cops!"
             # play sound siren
             $ renpy.pause(0.5)
             hide char jason
             jump jailState
 
+        if curTimeHour >= 22:
+            if curTimeHour < 23:
+                jim "Jason should be at his party now, its [curTimeHour] [curTimeMin]"
+                jim "now where should I look?"
+                menu:
+                    "Under the bed.":
+                        $ renpy.pause(1.0)
+                        show item fleece
+                        jim "Sweet I got it!"
+                        jim "THIS IS SOLID GOLD!?!"
+                        jim "Now I need to sell it and make my fortune"
+                        jump winState
+                    "In the closet.":
+                        $ renpy.pause(1.0)
+                        jason "JIM!? what are you doing here?"
+                        $ renpy.pause(0.5)
+                        show char jason
+                        jim "Uhhh..."
+                        jason "Thats it man, I'm callin' the Cops!"
+                        # play sound siren
+                        $ renpy.pause(0.5)
+                        hide char jason
+                        jump jailState
+                    "In the nightstand.":
+                        $ renpy.pause(1.0)
+                        jason "JIM!? what are you doing here?"
+                        $ renpy.pause(0.5)
+                        show char jason
+                        jim "Uhhh..."
+                        jason "Thats it man, I'm callin' the Cops!"
+                        # play sound siren
+                        $ renpy.pause(0.5)
+                        hide char jason
+                        jump jailState
+            if curTimeHour > 23:
+                $ renpy.pause(1.0)
+                jason "JIM!? what are you doing here?"
+                $ renpy.pause(0.5)
+                show char jason
+                jim "Uhhh..."
+                jason "Thats it man, I' callin' the Cops!"
+                # play sound siren
+                $ renpy.pause(0.5)
+                hide char jason
+                jump jailState
+    else :
+        $ renpy.pause(1.0)
+        jason "JIM!? what are you doing here?"
+        $ renpy.pause(0.5)
+        show char jason
+        jim "Uhhh..."
+        jason "Thats it man, I' callin' the Cops!"
+        # play sound siren
+        $ renpy.pause(0.5)
+        hide char jason
+        jump jailStates
     return
