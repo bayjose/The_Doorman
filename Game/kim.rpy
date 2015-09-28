@@ -13,6 +13,77 @@ label talkKimItem:
     return
 
 label talkKimNotItem:
+    menu:
+        "What's cooking?":
+            kim "Oh, stuff and things."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "Such as..?":
+                    kim "Oh, you know, the usual. I gotta run, bye bye!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                "How are the neighbors?":
+                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Any updtes?":
+                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                    $ curTimeMin = curTimeMin + timeConstant
+        "Hey girl!":
+            kim "Good day."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "How did you sleep?":
+                    kim "Oh alright."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What's cooking?":
+                            kim "Oh, stuff and things."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "Such as..?":
+                                    kim "Oh, you know, the usual. I gotta run, bye bye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "How are the neighbors?":
+                                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Any updtes?":
+                                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Any suspicious activity?":
+                            kim "Um, if there was, i'd report it..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                "What's cooking?":
+                    kim "Oh, stuff and things."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Such as..?":
+                            kim "Oh, you know, the usual. I gotta run, bye bye!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "How are the neighbors?":
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Any updtes?":
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            $ curTimeMin = curTimeMin + timeConstant
+        "Hey, How did you sleep?":
+            kim "Oh, alright."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "What's cooking?":
+                    kim "Oh, stuff and things."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Such as..?":
+                            kim "Oh, you know, the usual. I gotta run, bye bye!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "How are the neighbors?":
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Any updtes?":
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            $ curTimeMin = curTimeMin + timeConstant
+                "Any suspicious activity?":
+                    kim "Um, if there was, i'd report it..."
+                    $ curTimeMin = curTimeMin + timeConstant
     hide char kim
     jump homeScreen
     return

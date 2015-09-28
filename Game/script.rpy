@@ -79,7 +79,7 @@ define sound_siren = "sound/siren.wav"
 #define sound_ding = "sound/"
 #define sound_click = "sound/"
 #define sound_door = "sound/"
-#define sound_ring = "sound/"
+define sound_ring = "sound/Sound_Phone.wav"
 
 # Declare all variables that will be used in the game
 define curTimeHour = 17
@@ -115,12 +115,13 @@ define itemIndex = 0
 
 #All of these variables can be used in dialouge with the other inhabitants of the hotel
 #These pieces of data relate directly to the character who is being stolen from
-define itemName               = ""
-define targetCharacterName    = ""
-define targetCharacterFloor   = 0
-define targetCharacterRoom    = 0
-define targetCharacterHourOut = 0
-define targetCharacterHourIn  = 0
+define itemName                    = ""
+define targetCharacterName         = ""
+define targetCharacterItemLocation = ""
+define targetCharacterFloor        = 0
+define targetCharacterRoom         = 0
+define targetCharacterHourOut      = 0
+define targetCharacterHourIn       = 0
 # The game starts here.
 
 label start:
@@ -129,6 +130,7 @@ label start:
     if itemIndex == 0:
         $ itemName = "Dna Splicer"
         $ targetCharacterName = "Madam Feline"
+        $ targetCharacterItemLocation = "litter box"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 3
         $ targetCharacterHourOut = 20
@@ -136,6 +138,7 @@ label start:
     if itemIndex == 1:
         $ itemName = "Bag of Magic Flour"
         $ targetCharacterName = "Chris"
+        $ targetCharacterItemLocation = "cupboard"
         $ targetCharacterFloor = 2
         $ targetCharacterRoom  = 2
         $ targetCharacterHourOut = 21
@@ -143,6 +146,7 @@ label start:
     if itemIndex == 2:
         $ itemName = "Golden Fleece"
         $ targetCharacterName = "Jason"
+        $ targetCharacterItemLocation = "bed"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 2
         $ targetCharacterHourOut = 22
@@ -150,6 +154,7 @@ label start:
     if itemIndex == 3:
         $ itemName = "Deflated Football"
         $ targetCharacterName = "Coach"
+        $ targetCharacterItemLocation = "bed"
         $ targetCharacterFloor = 2
         $ targetCharacterRoom  = 4
         $ targetCharacterHourOut = 23
@@ -157,6 +162,7 @@ label start:
     if itemIndex == 4:
         $ itemName = "Diamond Pocket Watch"
         $ targetCharacterName = "Sir Edmond"
+        $ targetCharacterItemLocation = "night stand"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 1
         $ targetCharacterHourOut = 22
@@ -164,6 +170,7 @@ label start:
     if itemIndex == 5:
         $ itemName = "High Heels"
         $ targetCharacterName = "Kim"
+        $ targetCharacterItemLocation = "dresser"
         $ targetCharacterFloor = 2
         $ targetCharacterRoom  = 1
         $ targetCharacterHourOut = 20
@@ -171,6 +178,7 @@ label start:
     if itemIndex == 6:
         $ itemName = "Candle Stick"
         $ targetCharacterName = "Colonel Ketchup"
+        $ targetCharacterItemLocation = "mantle"
         $ targetCharacterFloor = 3
         $ targetCharacterRoom  = 4
         $ targetCharacterHourOut = 20
@@ -191,6 +199,8 @@ label initialize:
             $ daysLeft = 3;
         "Hard":
             $ daysLeft = 1;
+        "Reset":
+            jump start
     stop music fadeout musicFadeoutConstant
     play music music_intro fadein 2.0
     jump doormanApartment
@@ -205,8 +215,9 @@ label doormanApartment:
     jim "*Yawn* Ugh... looks like it's going to be another boring day for me."
 
     show item phone
-
+    play sound sound_ring
     manager "*ring* *ring*"
+    stop sound
     jim "!!"
     jim "He-Hello?"
     manager "Hello there young lad!"
@@ -489,21 +500,28 @@ label jailState:
     return
 
 label loseState:
-
-
+    show mnu textLose
+    with dissolve
+    $ renpy.pause(1.0)
     jump credits
     return
 
 label winState:
-
     show bg shop
     with dissolve
-
-    owner "That's a very nice item you have there, that is worth a fortune!"
-
+    owner "That's a very nice [itemName] you have there, that is worth a fortune!"
+    #play chaching
+    hide bg shop
+    with dissolve
+    $ renpy.pause(1.0)
+    show mnu textWin
+    with dissolve
+    $ renpy.pause(1.0)
     jump credits
     return
 
 label credits:
-
+    show mnu credits
+    with dissolve
+    $ renpy.pause(2.0)
     return

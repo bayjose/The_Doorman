@@ -13,6 +13,78 @@ label talkColonelKetchupItem:
     return
 
 label talkColonelKetchupNotItem:
+    menu:
+        "What are you up to today?":
+            colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "What room were they in?":
+                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Who was that again?":
+                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Hear anything else about it?":
+                    colonel "I think youll need to ask them yourself."
+                    $ curTimeMin = curTimeMin + timeConstant
+        "Hello Colonel!":
+            colonel "... Hi ... Jim ..."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "What are you up to today?":
+                    colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What room were they in?":
+                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Who was that again?":
+                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Hear anything else about it?":
+                            colonel "I think youll need to ask them yourself."
+                            $ curTimeMin = curTimeMin + timeConstant
+                "How is your day going?":
+                    colonel "I'll give you a clue, it starts with 'Just' and ends with 'Fine'!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Right...":
+                            colonel "I really couldn't give you any more clues!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Anyway, what are you up to today?":
+                            colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What room were they in?":
+                                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Who was that again?":
+                                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Hear anything else about it?":
+                                    colonel "I think youll need to ask them yourself."
+                                    $ curTimeMin = curTimeMin + timeConstant
+        "How is your day going?":
+            colonel "I'll give you a clue, it starts with 'Just' and ends with 'Fine'!"
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "Right...":
+                    colonel "I really couldn't give you any more clues!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Anyway, what are you up to today?":
+                    colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What room were they in?":
+                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Who was that again?":
+                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Hear anything else about it?":
+                            colonel "I think youll need to ask them yourself."
+                            $ curTimeMin = curTimeMin + timeConstant
+
     hide char colonel
     jump homeScreen
     return

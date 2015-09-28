@@ -12,11 +12,6 @@ label talkSirEdmondItem:
     jump homeScreen
     return
 
-label talkSirEdmondNotItem:
-    hide char edmond
-    jump homeScreen
-    return
-
 label sirEdmondRoom:
     if itemIndex == 4:
         if curTimeHour < targetCharacterHourOut:

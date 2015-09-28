@@ -13,6 +13,92 @@ label talkMadamFelineItem:
     return
 
 label talkMadamFelineNotItem:
+    menu:
+        "Hello Madam Feline, what are you up to today?":
+            madam "Not much, though I am rather tired, Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "What room are you in again?":
+                    if targetCharacterFloor == 3:
+                        madam "Im in 304, and the sound definately came from my floor."
+                        $ curTimeMin = curTimeMin + timeConstant
+                    if targetCharacterFloor == 2:
+                        madam "Im in 304, and the sound definately came from below my floor."
+                        $ curTimeMin = curTimeMin + timeConstant
+                "Who was that again":
+                    madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Hear anything else?":
+                    madam "That was all, Neither Mr. Fluffers nor I woke up one other time last night. Now I must be on my way."
+                    $ curTimeMin = curTimeMin + timeConstant
+        "You're the cat lady I keep hearing so much about.":
+            madam "Goodness, I prefer to be refered to as, Madam Feline."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "Hello Madam Feline, what are you up to today?":
+                    madam "Not much, though I am rather tired, Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What room are you in again?":
+                            if targetCharacterFloor == 3:
+                                madam "Im in 304, and the sound definately came from my floor."
+                                $ curTimeMin = curTimeMin + timeConstant
+                            if targetCharacterFloor == 2:
+                                madam "Im in 304, and the sound definately came from below my floor."
+                                $ curTimeMin = curTimeMin + timeConstant
+                        "Who was that again":
+                            madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Hear anything else?":
+                            madam "That was all, Neither Mr. Fluffers nor I woke up one other time last night. Now I must be on my way."
+                            $ curTimeMin = curTimeMin + timeConstant
+                "Oh, alright...":
+                    madam "Goodness, you are rude!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Right...":
+                            madam "Goodness!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "My appologies Madam Feline, what are you up to today?":
+                            madam "Not much, though I am rather tired, Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What room are you in again?":
+                                    if targetCharacterFloor == 3:
+                                        madam "Im in 304, and the sound definately came from my floor."
+                                        $ curTimeMin = curTimeMin + timeConstant
+                                    if targetCharacterFloor == 2:
+                                        madam "Im in 304, and the sound definately came from below my floor."
+                                        $ curTimeMin = curTimeMin + timeConstant
+                                "Who was that again":
+                                    madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Hear anything else?":
+                                    madam "That was all, Neither Mr. Fluffers nor I woke up one other time last night. Now I must be on my way."
+                                    $ curTimeMin = curTimeMin + timeConstant
+        "AWWW MAN! IS THAT CAT SMELL YOU?":
+            madam "It is the odor of progress!"
+            menu:
+                "Right...":
+                    madam "Goodness!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Progress, then you must be bussy today.":
+                    madam "Actually, I am rather tired. Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What room are you in again?":
+                            if targetCharacterFloor == 3:
+                                madam "Im in 304, and the sound definately came from my floor."
+                                $ curTimeMin = curTimeMin + timeConstant
+                            if targetCharacterFloor == 2:
+                                madam "Im in 304, and the sound definately came from below my floor."
+                                $ curTimeMin = curTimeMin + timeConstant
+                        "Who was that again":
+                            madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Hear anything else?":
+                            madam "That was all, Neither Mr. Fluffers nor I woke up one other time last night. Now I must be on my way."
+                            $ curTimeMin = curTimeMin + timeConstant
     hide char madam
     jump homeScreen
     return
