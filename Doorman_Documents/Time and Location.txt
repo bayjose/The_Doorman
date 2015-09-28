@@ -1,8 +1,8 @@
 Kim = 20 - 24 - Dresser
 Chris = 21 - 22 - Cupboard
 Jim = never
-Coach = 23 - 24 - under bed
+Coach = 23 - 24 - bed
 Sir Edmond = 22 - 23 - night stand
-Jason = 22 - 23 - under bed
+Jason = 22 - 23 - bed
 Madam Feline = 20 - 21 - litter box
 Colonel Ketchup = 20 - 21 - mantle
