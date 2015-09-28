@@ -25,7 +25,7 @@ label colonelKetchupRoom:
             colonel "Ahhh, what are you doing here!"
             jim "Um... Nothing. Why are you holding a bloody candle stick?"
             colonel "Umm... well... that's none of your buisness!"
-            jim "Oh my gosh! Am I a whitness to a murder..?"
+            jim "Oh my gosh! Am I a witness to a murder..?"
             colonel "Dang, are those the cops? They're onto us! RUN MAN"
             $ renpy.pause(1.0)
             jump jailState
@@ -47,7 +47,7 @@ label colonelKetchupRoom:
                         colonel "Ahhh, what are you doing here!"
                         jim "Um... Nothing. Why are you holding a bloody candle stick?"
                         colonel "Umm... well... that's none of your buisness!"
-                        jim "Oh my gosh! Am I a whitness to a murder..?"
+                        jim "Oh my gosh! Am I a witness to a murder..?"
                         colonel "Dang, are those the cops? They're onto us! RUN MAN"
                         $ renpy.pause(1.0)
                         jump jailState
@@ -57,7 +57,7 @@ label colonelKetchupRoom:
                         colonel "Ahhh, what are you doing here!"
                         jim "Um... Nothing. Why are you holding a bloody candle stick?"
                         colonel "Umm... well... that's none of your buisness!"
-                        jim "Oh my gosh! Am I a whitness to a murder..?"
+                        jim "Oh my gosh! Am I a witness to a murder..?"
                         colonel "Dang, are those the cops? They're onto us! RUN MAN"
                         $ renpy.pause(1.0)
                         jump jailState
@@ -67,7 +67,7 @@ label colonelKetchupRoom:
                 colonel "Ahhh, what are you doing here!"
                 jim "Um... Nothing. Why are you holding a bloody candle stick?"
                 colonel "Umm... well... that's none of your buisness!"
-                jim "Oh my gosh! Am I a whitness to a murder..?"
+                jim "Oh my gosh! Am I a witness to a murder..?"
                 colonel "Dang, are those the cops? They're onto us! RUN MAN"
                 $ renpy.pause(1.0)
                 jump jailState
@@ -75,7 +75,7 @@ label colonelKetchupRoom:
         coach "Ahh, you frightened me! And if anyone asks, I totally had no idea that the football was deflated."
         show char coach
         jim "Sure.. I bet..."
-        coach "Well, you are invadeing my privacy, so I have informed my two largest linemen and they are on their way to take you to the authorities."
+        coach "Well, you are invading my privacy, so I have informed my two largest linemen and they are on their way to take you to the authorities."
         coach "You being gone will let a little pressure out of my life."
         $ renpy.pause(1.0)
         hide char coach

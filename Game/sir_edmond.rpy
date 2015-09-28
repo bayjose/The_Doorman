@@ -23,8 +23,8 @@ label sirEdmondRoom:
             $ renpy.pause(1.0)
             edmund "What are you doing here good sir?"
             show char edmond
-            jim "Err... Umm... I totally was NOT trying to steel anything from you."
-            edmund "Goodness, pesants are very presistant with their lies."
+            jim "Err... Umm... I totally was NOT trying to steal anything from you."
+            edmund "Goodness, peasants are very persistent with their lies."
             edmund "I'm contacting the authorities!"
             $ renpy.pause(1.0)
             hide char edmond
@@ -39,8 +39,8 @@ label sirEdmondRoom:
                         $ renpy.pause(1.0)
                         edmund "What are you doing here good sir?"
                         show char edmond
-                        jim "Err... Umm... I totally was NOT trying to steel anything from you."
-                        edmund "Goodness, pesants are very presistant with their lies."
+                        jim "Err... Umm... I totally was NOT trying to steal anything from you."
+                        edmund "Goodness, peasants are very persistent with their lies."
                         edmund "I'm contacting the authorities!"
                         $ renpy.pause(1.0)
                         hide char edmond
@@ -56,8 +56,8 @@ label sirEdmondRoom:
                         $ renpy.pause(1.0)
                         edmund "What are you doing here good sir?"
                         show char edmond
-                        jim "Err... Umm... I totally was NOT trying to steel anything from you."
-                        edmund "Goodness, pesants are very presistant with their lies."
+                        jim "Err... Umm... I totally was NOT trying to steal anything from you."
+                        edmund "Goodness, peasants are very persistent with their lies."
                         edmund "I'm contacting the authorities!"
                         $ renpy.pause(1.0)
                         hide char edmond
@@ -66,8 +66,8 @@ label sirEdmondRoom:
                 $ renpy.pause(1.0)
                 edmund "What are you doing here good sir?"
                 show char edmond
-                jim "Err... Umm... I totally was NOT trying to steel anything from you."
-                edmund "Goodness, pesants are very presistant with their lies."
+                jim "Err... Umm... I totally was NOT trying to steal anything from you."
+                edmund "Goodness, peasants are very persistent with their lies."
                 edmund "I'm contacting the authorities!"
                 $ renpy.pause(1.0)
                 hide char edmond
@@ -75,8 +75,8 @@ label sirEdmondRoom:
     else:
         edmund "What are you doing here good sir?"
         show char edmond
-        jim "Err... Umm... I totally was NOT trying to steel anything from you."
-        edmund "Goodness, pesants are very presistant with their lies."
+        jim "Err... Umm... I totally was NOT trying to steal anything from you."
+        edmund "Goodness, peasants are very persistent with their lies."
         edmund "I'm contacting the authorities!"
         $ renpy.pause(1.0)
         hide char edmond

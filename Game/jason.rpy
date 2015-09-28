@@ -26,7 +26,7 @@ label talkJasonItem:
                             jason "My Golden Fleece! It's my most prized possesion!"
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
-                                "Do you bring something that valuble to a party?":
+                                "Do you bring something that valuable to a party?":
                                     jason "No way man! I keep that thing under my bed until I need it!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
@@ -36,7 +36,7 @@ label talkJasonItem:
                                         "See ya!":
                                             jason "Bye man!"
                                             $ curTimeMin = curTimeMin + timeConstant
-                                "Sounds valuble...":
+                                "Sounds valuable...":
                                     jason "Yeah I guess so... I'll see ya later..."
                                     $ curTimeMin = curTimeMin + timeConstant
                 "Well, have fun with it!":
@@ -57,7 +57,7 @@ label talkJasonItem:
                                     jason "My Golden Fleece! It's my most prized possesion!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
-                                        "Do you bring something that valuble to a party?":
+                                        "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
@@ -67,7 +67,7 @@ label talkJasonItem:
                                                 "See ya!":
                                                     jason "Bye man!"
                                                     $ curTimeMin = curTimeMin + timeConstant
-                                        "Sounds valuble...":
+                                        "Sounds valuable...":
                                             jason "Yeah I guess so... I'll see ya later..."
                                             $ curTimeMin = curTimeMin + timeConstant
                                 "Good luck!":
@@ -87,7 +87,7 @@ label talkJasonItem:
                                     jason "My Golden Fleece! It's my most prized possesion!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
-                                        "Do you bring something that valuble to a party?":
+                                        "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
@@ -97,7 +97,7 @@ label talkJasonItem:
                                                 "See ya!":
                                                     jason "Bye man!"
                                                     $ curTimeMin = curTimeMin + timeConstant
-                                        "Sounds valuble...":
+                                        "Sounds valuable...":
                                             jason "Yeah I guess so... I'll see ya later..."
                                             $ curTimeMin = curTimeMin + timeConstant
                                 "Good luck!":
@@ -132,7 +132,7 @@ label talkJasonItem:
                                             jason "My Golden Fleece! It's my most prized possesion!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Do you bring something that valuble to a party?":
+                                                "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
@@ -142,7 +142,7 @@ label talkJasonItem:
                                                         "See ya!":
                                                             jason "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                "Sounds valuble...":
+                                                "Sounds valuable...":
                                                     jason "Yeah I guess so... I'll see ya later..."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Well, have fun with it!":
@@ -163,7 +163,7 @@ label talkJasonItem:
                                                     jason "My Golden Fleece! It's my most prized possesion!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
-                                                        "Do you bring something that valuble to a party?":
+                                                        "Do you bring something that valuable to a party?":
                                                             jason "No way man! I keep that thing under my bed until I need it!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
@@ -173,7 +173,7 @@ label talkJasonItem:
                                                                 "See ya!":
                                                                     jason "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                        "Sounds valuble...":
+                                                        "Sounds valuable...":
                                                             jason "Yeah I guess so... I'll see ya later..."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Good luck!":
@@ -193,7 +193,7 @@ label talkJasonItem:
                                                     jason "My Golden Fleece! It's my most prized possesion!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
-                                                        "Do you bring something that valuble to a party?":
+                                                        "Do you bring something that valuable to a party?":
                                                             jason "No way man! I keep that thing under my bed until I need it!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
@@ -203,7 +203,7 @@ label talkJasonItem:
                                                                 "See ya!":
                                                                     jason "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                        "Sounds valuble...":
+                                                        "Sounds valuable...":
                                                             jason "Yeah I guess so... I'll see ya later..."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Good luck!":
@@ -228,7 +228,7 @@ label talkJasonItem:
                                     jason "My Golden Fleece! It's my most prized possesion!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
-                                        "Do you bring something that valuble to a party?":
+                                        "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
@@ -238,7 +238,7 @@ label talkJasonItem:
                                                 "See ya!":
                                                     jason "Bye man!"
                                                     $ curTimeMin = curTimeMin + timeConstant
-                                        "Sounds valuble...":
+                                        "Sounds valuable...":
                                             jason "Yeah I guess so... I'll see ya later..."
                                             $ curTimeMin = curTimeMin + timeConstant
                         "Well, have fun with it!":
@@ -259,7 +259,7 @@ label talkJasonItem:
                                             jason "My Golden Fleece! It's my most prized possesion!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Do you bring something that valuble to a party?":
+                                                "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
@@ -269,7 +269,7 @@ label talkJasonItem:
                                                         "See ya!":
                                                             jason "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                "Sounds valuble...":
+                                                "Sounds valuable...":
                                                     jason "Yeah I guess so... I'll see ya later..."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "Good luck!":
@@ -289,7 +289,7 @@ label talkJasonItem:
                                             jason "My Golden Fleece! It's my most prized possesion!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Do you bring something that valuble to a party?":
+                                                "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
@@ -299,7 +299,7 @@ label talkJasonItem:
                                                         "See ya!":
                                                             jason "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                "Sounds valuble...":
+                                                "Sounds valuable...":
                                                     jason "Yeah I guess so... I'll see ya later..."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "Good luck!":
@@ -330,7 +330,7 @@ label talkJasonItem:
                                     jason "My Golden Fleece! It's my most prized possesion!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
-                                        "Do you bring something that valuble to a party?":
+                                        "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
@@ -340,7 +340,7 @@ label talkJasonItem:
                                                 "See ya!":
                                                     jason "Bye man!"
                                                     $ curTimeMin = curTimeMin + timeConstant
-                                        "Sounds valuble...":
+                                        "Sounds valuable...":
                                             jason "Yeah I guess so... I'll see ya later..."
                                             $ curTimeMin = curTimeMin + timeConstant
                         "Well, have fun with it!":
@@ -361,7 +361,7 @@ label talkJasonItem:
                                             jason "My Golden Fleece! It's my most prized possesion!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Do you bring something that valuble to a party?":
+                                                "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
@@ -371,7 +371,7 @@ label talkJasonItem:
                                                         "See ya!":
                                                             jason "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                "Sounds valuble...":
+                                                "Sounds valuable...":
                                                     jason "Yeah I guess so... I'll see ya later..."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "Good luck!":
@@ -391,7 +391,7 @@ label talkJasonItem:
                                             jason "My Golden Fleece! It's my most prized possesion!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Do you bring something that valuble to a party?":
+                                                "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
@@ -401,7 +401,7 @@ label talkJasonItem:
                                                         "See ya!":
                                                             jason "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                "Sounds valuble...":
+                                                "Sounds valuable...":
                                                     jason "Yeah I guess so... I'll see ya later..."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "Good luck!":
@@ -424,7 +424,7 @@ label talkJasonNotItem:
                     jason "[targetCharacterName], Isn't it your job to know them?"
                     $ curTimeMin = curTimeMin + timeConstant
                 "Hear about anything else?":
-                    jason "just talk to them yourself."
+                    jason "Just talk to them yourself."
                     $ curTimeMin = curTimeMin + timeConstant
         "Hello Jason!":
             jason "Hey Jim!"
@@ -441,7 +441,7 @@ label talkJasonNotItem:
                             jason "[targetCharacterName], Isn't it your job to know them?"
                             $ curTimeMin = curTimeMin + timeConstant
                         "Hear about anything else?":
-                            jason "just talk to them yourself."
+                            jason "Just talk to them yourself."
                             $ curTimeMin = curTimeMin + timeConstant
                 "How is your day going?":
                     jason "Same as every day: AWESOME!"
@@ -458,7 +458,7 @@ label talkJasonNotItem:
                                     jason "[targetCharacterName], Isn't it your job to know them?"
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Hear about anything else?":
-                                    jason "just talk to them yourself."
+                                    jason "Just talk to them yourself."
                                     $ curTimeMin = curTimeMin + timeConstant
                         "Right...":
                             jason "Hey, you just don't get me, man!"
@@ -477,7 +477,7 @@ label talkJasonNotItem:
                             jason "[targetCharacterName], Isn't it your job to know them?"
                             $ curTimeMin = curTimeMin + timeConstant
                         "Hear about anything else?":
-                            jason "just talk to them yourself."
+                            jason "Just talk to them yourself."
                             $ curTimeMin = curTimeMin + timeConstant
                 "Right...":
                     jason "Hey, you just don't get me, man!"
@@ -504,7 +504,7 @@ label jasonRoom:
         if curTimeHour >= 22:
             if curTimeHour < 23:
                 jim "Jason should be at his party now, its [curTimeHour] [curTimeMin]"
-                jim "now where should I look?"
+                jim "Now where should I look?"
                 menu:
                     "Under the bed.":
                         $ renpy.pause(1.0)
@@ -541,7 +541,7 @@ label jasonRoom:
                 $ renpy.pause(0.5)
                 show char jason
                 jim "Uhhh..."
-                jason "Thats it man, I' callin' the Cops!"
+                jason "Thats it man, I'm callin' the Cops!"
                 # play sound siren
                 $ renpy.pause(0.5)
                 hide char jason
@@ -552,7 +552,7 @@ label jasonRoom:
         $ renpy.pause(0.5)
         show char jason
         jim "Uhhh..."
-        jason "Thats it man, I' callin' the Cops!"
+        jason "Thats it man, I'm callin' the Cops!"
         # play sound siren
         $ renpy.pause(0.5)
         hide char jason

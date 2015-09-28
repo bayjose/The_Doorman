@@ -24,7 +24,7 @@ label madamFelineRoom:
             madam "Meow! Meow! Meow! Meow!"
             jim "Uh... "
             show char madam
-            jim "Err... Umm... I totally was NOT trying to steel anything from you, are you a cat?"
+            jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
             madam "Meoowww... (cough) (cough) Well, half a cat really."
             madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
             #play sound cat
@@ -49,7 +49,7 @@ label madamFelineRoom:
                         madam "Meow! Meow! Meow! Meow!"
                         jim "Uh... "
                         show char madam
-                        jim "Err... Umm... I totally was NOT trying to steel anything from you, are you a cat?"
+                        jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
                         madam "Meoowww... (cough) (cough) Well, half a cat really."
                         madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
                         #play sound cat
@@ -61,7 +61,7 @@ label madamFelineRoom:
                         madam "Meow! Meow! Meow! Meow!"
                         jim "Uh... "
                         show char madam
-                        jim "Err... Umm... I totally was NOT trying to steel anything from you, are you a cat?"
+                        jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
                         madam "Meoowww... (cough) (cough) Well, half a cat really."
                         madam "That was a total invasion of my privacy!"
                         madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
@@ -74,7 +74,7 @@ label madamFelineRoom:
                 madam "Meow! Meow! Meow! Meow!"
                 jim "Uh... "
                 show char madam
-                jim "Err... Umm... I totally was NOT trying to steel anything from you, are you a cat?"
+                jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
                 madam "Meoowww... (cough) (cough) Well, half a cat really."
                 madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
                 #play sound cat
@@ -86,7 +86,7 @@ label madamFelineRoom:
         madam "Meow! Meow! Meow! Meow!"
         jim "Uh... "
         show char madam
-        jim "Err... Umm... I totally was NOT trying to steel anything from you, are you a cat?"
+        jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
         madam "Meoowww... (cough) (cough) Well, half a cat really."
         madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
         #play sound cat
