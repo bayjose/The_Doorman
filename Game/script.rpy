@@ -92,11 +92,10 @@ define roomNumber = 0
 define tempRandom = 0
 
 #Used for Memory
-init python:
-    shortTermMemory = ["Turtles", "Food"]
-    longTermMemory = ["Soup", "bacon"]
 
-define renpyLongTermMemory = longTermMemory
+define shortTermMemory = ["Turtles", "Food"]
+define longTermMemory = ["Soup", "bacon"]
+
 define memoryIndex = 0
 
 #Time constant to advance time by per interaction with person.
@@ -214,8 +213,8 @@ screen journal():
         textbutton "" xalign 1 yalign 0 xsize 128 ysize 128 action Jump("recapLongTerm")
 
 label recapLongTerm:
-    if memoryIndex < len(renpyLongTermMemory):
-        $ temp = renpyLongTermMemory[memoryIndex]
+    if memoryIndex < len(longTermMemory):
+        $ temp = longTermMemory[memoryIndex]
         $ memoryIndex = memoryIndex + 1
         if temp != "":
             jim "[temp]"
@@ -631,8 +630,8 @@ label sleepRecapLoop:
         if temp != "":
             jim "[temp]"
             jump sleepRecapLoop
-            python:
-                self.renpyLongTermMemory = longTermMemory.append(temp)
+            asdfasdfasdfawerqw
+            $ longTermMemory = ["1", "2", "3", "4", "5", "6"]
 
     jump initiateREM
     return
