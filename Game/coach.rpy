@@ -8,7 +8,445 @@ label talkCoach:
     return
 
 label talkCoachItem:
-
+    menu:
+        "What are you up to today?":
+            coach "Well I can see right onto the other teams practice right from my room."
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "Well, any plans tonight?":
+                    coach "My team plays tonight!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What time is the kickoff?":
+                            coach "8pm! I have a few tickets handy if you'd like to come!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "Sure! I'd love to!":
+                                    coach "Here it is-oh wait..."
+                                    coach "This is the other teams playbook! Better not leave that."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Mind if I take a look?":
+                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                    coach "You're right. Gotta go study up, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good luck!":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "See Ya":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds illegal...":
+                                                    coach "Yeah... I'll see ya later..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "You have the other teams playbook!?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Where did you get that?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Maybe.":
+                                    coach "Here it is-oh wait..."
+                                    coach "This is the other teams playbook! Better not leave that."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Mind if I take a look?":
+                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                    coach "You're right. Gotta go study up, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good luck!":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "See Ya":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds illegal...":
+                                                    coach "Yeah... I'll see ya later..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "You have the other teams playbook!?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Where did you get that?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Sorry, I can't":
+                                    coach "Too bad man. See ya around!"
+                        "You think your team will win?":
+                            coach "Yeah I have got a few important notes which should give us the edge."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "How'd you get those?":
+                                    coach "Long story."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
+                                            coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "When is kickoff?":
+                                                    coach "8pm, I have a spare ticket if you want."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Maybe!":
+                                                            coach "Sounds good. See ya!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "I'll see if I can!":
+                                                            coach "Sounds good. See ya!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "See ya!":
+                                                    coach "Bye man!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Hmmm, you sure you should have those?":
+                                            coach "Excuse me? Are you questioning my coaching? Sheesh, stupid fans... Later."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Interesting...":
+                                    coach "Thanks! See ya!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Good luck!":
+                                    coach "Thanks! See ya!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Best of Luck!":
+                            coach "Thanks so much!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                "Right...":
+                    coach "You just dont get me man!"
+                    $ curTimeMin = curTimeMin + timeConstant
+        "Hey Coach!":
+            coach "What's up Superstar?"
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "What are you up to today?":
+                    coach "Well I can see right onto the other teams practice right from my room."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Well, any plans tonight?":
+                            coach "My team plays tonight!"
+                            menu:
+                                "What time is the kickoff?":
+                                    coach "8pm! I have a few tickets handy if you'd like to come!"
+                                    menu:
+                                        "Sure! I'd love to!":
+                                            coach "Here it is-oh wait..."
+                                            coach "This is the other teams playbook! Better not leave that."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Mind if I take a look?":
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                            coach "You're right. Gotta go study up, see you!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Good luck!":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "See Ya":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "Sounds illegal...":
+                                                            coach "Yeah... I'll see ya later..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "You have the other teams playbook!?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Where did you get that?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Maybe.":
+                                            coach "Here it is-oh wait..."
+                                            coach "This is the other teams playbook! Better not leave that."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Mind if I take a look?":
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                            coach "You're right. Gotta go study up, see you!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Good luck!":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "See Ya":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "Sounds illegal...":
+                                                            coach "Yeah... I'll see ya later..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "You have the other teams playbook!?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Where did you get that?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Sorry, I can't":
+                                            coach "Too bad man. See ya around!"
+                                "You think your team will win?":
+                                    coach "Yeah I have got a few important notes which should give us the edge."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "How'd you get those?":
+                                            coach "Long story."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
+                                                    coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When is kickoff?":
+                                                            coach "8pm, I have a spare ticket if you want."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Maybe!":
+                                                                    coach "Sounds good. See ya!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "I'll see if I can!":
+                                                                    coach "Sounds good. See ya!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Hmmm, you sure you should have those?":
+                                                    coach "Excuse me? Are you questioning my coaching? Sheesh, stupid fans... Later."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            coach "Thanks! See ya!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Good luck!":
+                                            coach "Thanks! See ya!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Best of Luck!":
+                                    coach "Thanks so much!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Right...":
+                            coach "You just dont get me man!"
+                "How have you been?":
+                    coach "Pretty great I can see right into the other teams practice from my room!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Well, any plans tonight?":
+                            coach "My team plays tonight!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What time is the kickoff?":
+                                    coach "8pm! I have a few tickets handy if you'd like to come!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Sure! I'd love to!":
+                                            coach "Here it is-oh wait..."
+                                            coach "This is the other teams playbook! Better not leave that."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Mind if I take a look?":
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                            coach "You're right. Gotta go study up, see you!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Good luck!":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "See Ya":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "Sounds illegal...":
+                                                            coach "Yeah... I'll see ya later..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "You have the other teams playbook!?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Where did you get that?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Maybe.":
+                                            coach "Here it is-oh wait..."
+                                            coach "This is the other teams playbook! Better not leave that."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Mind if I take a look?":
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                            coach "You're right. Gotta go study up, see you!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Good luck!":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "See Ya":
+                                                                    coach "Bye man!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "Sounds illegal...":
+                                                            coach "Yeah... I'll see ya later..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "You have the other teams playbook!?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Where did you get that?":
+                                                    coach "Uh... I found it. Gotta go, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Sorry, I can't":
+                                            coach "Too bad man. See ya around!"
+                                "You think your team will win?":
+                                    coach "Yeah I have got a few important notes which should give us the edge."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "How'd you get those?":
+                                            coach "Long story."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
+                                                    coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When is kickoff?":
+                                                            coach "8pm, I have a spare ticket if you want."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Maybe!":
+                                                                    coach "Sounds good. See ya!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "I'll see if I can!":
+                                                                    coach "Sounds good. See ya!"
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Hmmm, you sure you should have those?":
+                                                    coach "Excuse me? Are you questioning my coaching? Sheesh, stupid fans... Later."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            coach "Thanks! See ya!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Good luck!":
+                                            coach "Thanks! See ya!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Best of Luck!":
+                                    coach "Thanks so much!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Right...":
+                            coach "You just don't get me man!"
+                            $ curTimeMin = curTimeMin + timeConstant
+        "How have you been?":
+            coach "Pretty great I can see right into the other teams practice from my room!"
+            menu:
+                "Well, any plans tonight?":
+                    coach "My team plays tonight!"
+                    menu:
+                        "What time is the kickoff?":
+                            coach "8pm! I have a few tickets handy if you'd like to come!"
+                            menu:
+                                "Sure! I'd love to!":
+                                    coach "Here it is-oh wait..."
+                                    coach "This is the other teams playbook! Better not leave that."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Mind if I take a look?":
+                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                    coach "You're right. Gotta go study up, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good luck!":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "See Ya":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds illegal...":
+                                                    coach "Yeah... I'll see ya later..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "You have the other teams playbook!?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Where did you get that?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Maybe.":
+                                    coach "Here it is-oh wait..."
+                                    coach "This is the other teams playbook! Better not leave that."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Mind if I take a look?":
+                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                    coach "You're right. Gotta go study up, see you!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Good luck!":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "See Ya":
+                                                            coach "Bye man!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds illegal...":
+                                                    coach "Yeah... I'll see ya later..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "You have the other teams playbook!?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Where did you get that?":
+                                            coach "Uh... I found it. Gotta go, see you!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Sorry, I can't":
+                                    coach "Too bad man. See ya around!"
+                        "You think your team will win?":
+                            coach "Yeah I have got a few important notes which should give us the edge."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "How'd you get those?":
+                                    coach "Long story."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
+                                            coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "When is kickoff?":
+                                                    coach "8pm, I have a spare ticket if you want."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Maybe!":
+                                                            coach "Sounds good. See ya!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "I'll see if I can!":
+                                                            coach "Sounds good. See ya!"
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "See ya!":
+                                                    coach "Bye man!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Hmmm, you sure you should have those?":
+                                            coach "Excuse me? Are you questioning my coaching? Sheesh, stupid fans... Later."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Interesting...":
+                                    coach "Thanks! See ya!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Good luck!":
+                                    coach "Thanks! See ya!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Best of Luck!":
+                            coach "Thanks so much!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                "Right...":
+                    coach "You just don't get me man!"
+                    $ curTimeMin = curTimeMin + timeConstant
     hide char coach
     jump homeScreen
     return
@@ -24,14 +462,14 @@ label talkCoachNotItem:
                     coach "This was right around [targetCharacterHourOut] o'clock last night."
                     $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 2:
-                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 3:
                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                         $ curTimeMin = curTimeMin + timeConstant
                 "Who did this?":
                     if targetCharacterFloor == 2:
-                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 3:
                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
@@ -56,14 +494,14 @@ label talkCoachNotItem:
                                     coach "This was right around [targetCharacterHourOut] o'clock last night."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 2:
-                                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 3:
                                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                                         $ curTimeMin = curTimeMin + timeConstant
                                 "Who did this?":
                                     if targetCharacterFloor == 2:
-                                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 3:
                                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
@@ -82,14 +520,14 @@ label talkCoachNotItem:
                         "What time was this?":
                             coach "This was right around [targetCharacterHourOut] o'clock last night."
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who did this?":
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
@@ -109,14 +547,14 @@ label talkCoachNotItem:
                         "What time was this?":
                             coach "This was right around [targetCharacterHourOut] o'clock last night."
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who did this?":
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
