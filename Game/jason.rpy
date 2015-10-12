@@ -487,7 +487,7 @@ label talkJasonNotItem:
 
 label jasonRoom:
     if itemIndex == 2:
-        jim "Sweet i'm in, and I think that this is Jason's room!, now to steel that Fleece"
+        jim "Sweet I'm in, and I think that this is Jason's room!, now to steel that Fleece"
 
         if curTimeHour < 22:
             $ renpy.pause(1.0)

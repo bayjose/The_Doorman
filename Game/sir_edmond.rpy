@@ -36,7 +36,7 @@ label talkSirEdmondItem:
                                                    edmund "Cheers!"
                                                    $ curTimeMin = curTimeMin + timeConstant
                                        "What ball?":
-                                           edmund "Nice try, it's only for distinguished gentleman like myself."
+                                           edmund "Nice try, it's only for distinguished gentlemen like myself."
                                            $ curTimeMin = curTimeMin + timeConstant
                                "Wow, that sounds expencive!":
                                    edmund "Mmmm, best to keep it away from prying eyes."
@@ -63,7 +63,7 @@ label talkSirEdmondItem:
                                                     edmund "Cheers!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "What ball?":
-                                            edmund "Nice try, it's only for distinguished gentleman like myself."
+                                            edmund "Nice try, it's only for distinguished gentlemen like myself."
                                             $ curTimeMin = curTimeMin + timeConstant
                                 "Wow, that sounds expencive!":
                                     edmund "Mmmm, best to keep it away from prying eyes."
@@ -79,7 +79,7 @@ label talkSirEdmondItem:
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "I didn't even know there was a ball.":
-                            edmund "Well, only the finest gentleman were invited."
+                            edmund "Well, only the finest gentlemen were invited."
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What makes a gentleman?":
@@ -142,7 +142,7 @@ label talkSirEdmondItem:
                                                            edmund "Cheers!"
                                                            $ curTimeMin = curTimeMin + timeConstant
                                                "What ball?":
-                                                   edmund "Nice try, it's only for distinguished gentleman like myself."
+                                                   edmund "Nice try, it's only for distinguished gentlemen like myself."
                                                    $ curTimeMin = curTimeMin + timeConstant
                                        "Wow, that sounds expencive!":
                                            edmund "Mmmm, best to keep it away from prying eyes."
@@ -169,7 +169,7 @@ label talkSirEdmondItem:
                                                             edmund "Cheers!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "What ball?":
-                                                    edmund "Nice try, it's only for distinguished gentleman like myself."
+                                                    edmund "Nice try, it's only for distinguished gentlemen like myself."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "Wow, that sounds expencive!":
                                             edmund "Mmmm, best to keep it away from prying eyes."
@@ -185,7 +185,7 @@ label talkSirEdmondItem:
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "I didn't even know there was a ball.":
-                                    edmund "Well, only the finest gentleman were invited."
+                                    edmund "Well, only the finest gentlemen were invited."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "What makes a gentleman?":
@@ -249,7 +249,7 @@ label talkSirEdmondItem:
                                                                    edmund "Cheers!"
                                                                    $ curTimeMin = curTimeMin + timeConstant
                                                        "What ball?":
-                                                           edmund "Nice try, it's only for distinguished gentleman like myself."
+                                                           edmund "Nice try, it's only for distinguished gentlemen like myself."
                                                            $ curTimeMin = curTimeMin + timeConstant
                                                "Wow, that sounds expencive!":
                                                    edmund "Mmmm, best to keep it away from prying eyes."
@@ -276,7 +276,7 @@ label talkSirEdmondItem:
                                                                     edmund "Cheers!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "What ball?":
-                                                            edmund "Nice try, it's only for distinguished gentleman like myself."
+                                                            edmund "Nice try, it's only for distinguished gentlemen like myself."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Wow, that sounds expencive!":
                                                     edmund "Mmmm, best to keep it away from prying eyes."
@@ -292,7 +292,7 @@ label talkSirEdmondItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "I didn't even know there was a ball.":
-                                            edmund "Well, only the finest gentleman were invited."
+                                            edmund "Well, only the finest gentlemen were invited."
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "What makes a gentleman?":
@@ -359,7 +359,7 @@ label talkSirEdmondItem:
                                                            edmund "Cheers!"
                                                            $ curTimeMin = curTimeMin + timeConstant
                                                "What ball?":
-                                                   edmund "Nice try, it's only for distinguished gentleman like myself."
+                                                   edmund "Nice try, it's only for distinguished gentlemen like myself."
                                                    $ curTimeMin = curTimeMin + timeConstant
                                        "Wow, that sounds expencive!":
                                            edmund "Mmmm, best to keep it away from prying eyes."
@@ -386,7 +386,7 @@ label talkSirEdmondItem:
                                                             edmund "Cheers!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "What ball?":
-                                                    edmund "Nice try, it's only for distinguished gentleman like myself."
+                                                    edmund "Nice try, it's only for distinguished gentlemen like myself."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "Wow, that sounds expencive!":
                                             edmund "Mmmm, best to keep it away from prying eyes."
@@ -402,7 +402,7 @@ label talkSirEdmondItem:
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "I didn't even know there was a ball.":
-                                    edmund "Well, only the finest gentleman were invited."
+                                    edmund "Well, only the finest gentlemen were invited."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "What makes a gentleman?":

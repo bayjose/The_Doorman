@@ -37,7 +37,7 @@ label talkColonelKetchupItem:
                                                         "Sounds good!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "Congradulations!":
+                                                        "Congratulations!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "See ya!":
@@ -71,7 +71,7 @@ label talkColonelKetchupItem:
                                                         "Sounds good!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "Congradulations!":
+                                                        "Congratulations!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "See ya!":
@@ -106,7 +106,7 @@ label talkColonelKetchupItem:
                                                 "Sounds good!":
                                                     colonel "Goodbye... Jim..."
                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                "Congradulations!":
+                                                "Congratulations!":
                                                     colonel "Goodbye... Jim..."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "See ya!":
@@ -153,7 +153,7 @@ label talkColonelKetchupItem:
                                                                 "Sounds good!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "Congradulations!":
+                                                                "Congratulations!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "See ya!":
@@ -187,7 +187,7 @@ label talkColonelKetchupItem:
                                                                 "Sounds good!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "Congradulations!":
+                                                                "Congratulations!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "See ya!":
@@ -222,7 +222,7 @@ label talkColonelKetchupItem:
                                                         "Sounds good!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "Congradulations!":
+                                                        "Congratulations!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "See ya!":
@@ -274,7 +274,7 @@ label talkColonelKetchupItem:
                                                                         "Sounds good!":
                                                                             colonel "Goodbye... Jim..."
                                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                                        "Congradulations!":
+                                                                        "Congratulations!":
                                                                             colonel "Goodbye... Jim..."
                                                                             $ curTimeMin = curTimeMin + timeConstant
                                                                 "See ya!":
@@ -308,7 +308,7 @@ label talkColonelKetchupItem:
                                                                         "Sounds good!":
                                                                             colonel "Goodbye... Jim..."
                                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                                        "Congradulations!":
+                                                                        "Congratulations!":
                                                                             colonel "Goodbye... Jim..."
                                                                             $ curTimeMin = curTimeMin + timeConstant
                                                                 "See ya!":
@@ -343,7 +343,7 @@ label talkColonelKetchupItem:
                                                                 "Sounds good!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "Congradulations!":
+                                                                "Congratulations!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "See ya!":
@@ -395,7 +395,7 @@ label talkColonelKetchupItem:
                                                                 "Sounds good!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "Congradulations!":
+                                                                "Congratulations!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "See ya!":
@@ -429,7 +429,7 @@ label talkColonelKetchupItem:
                                                                 "Sounds good!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "Congradulations!":
+                                                                "Congratulations!":
                                                                     colonel "Goodbye... Jim..."
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "See ya!":
@@ -464,7 +464,7 @@ label talkColonelKetchupItem:
                                                         "Sounds good!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "Congradulations!":
+                                                        "Congratulations!":
                                                             colonel "Goodbye... Jim..."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "See ya!":
