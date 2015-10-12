@@ -8,6 +8,480 @@ label talkColonelKetchup:
     return
 
 label talkColonelKetchupItem:
+    # Remove in final version
+    show char colonel
+    menu:
+        "What are you up to today?":
+            colonel "I'm going to be awarded for solving a murder!"
+            menu:
+                "When will you be awarded?":
+                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "How did you solve the case?":
+                            colonel "The last bit of evidence I needed was the candlestick..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What's that?":
+                                    colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Are you bringing it with you to the award ceremony?":
+                                            colonel "Of course not! It stays safely on my mantle."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "When will you be awarded?":
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Sounds good!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "Congradulations!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "See ya!":
+                                                    colonel "Goodbye... Jim..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Sounds valuable...":
+                                            colonel "I suppose so... Goodbye."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Interesting...":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Nice Job!":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Did you find evidence of the murder?":
+                            colonel "The last bit of evidence I needed was the candlestick..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What's that?":
+                                    colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Are you bringing it with you to the award ceremony?":
+                                            colonel "Of course not! It stays safely on my mantle."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "When will you be awarded?":
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Sounds good!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "Congradulations!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "See ya!":
+                                                    colonel "Goodbye... Jim..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Sounds valuable...":
+                                            colonel "I suppose so... Goodbye."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Interesting...":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Nice Job!":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+
+                "Sounds like fun!":
+                    colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "What's that?":
+                            colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "Are you bringing it with you to the award ceremony?":
+                                    colonel "Of course not! It stays safely on my mantle."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "When will you be awarded?":
+                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Sounds good!":
+                                                    colonel "Goodbye... Jim..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Congradulations!":
+                                                    colonel "Goodbye... Jim..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "See ya!":
+                                            colonel "Goodbye... Jim..."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Sounds valuable...":
+                                    colonel "I suppose so... Goodbye."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Interesting...":
+                            colonel "Thank you... Goodbye!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Nice Job!":
+                            colonel "Thank you... Goodbye!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                "Well, have fun with it!":
+                    colonel "I'm sure I will."
+                    $ curTimeMin = curTimeMin + timeConstant
+        "Hello Colonel!":
+            colonel "Why hello there... Jim..."
+            menu:
+                "What are you up to today?":
+                    colonel "I'm going to be awarded for solving a murder!"
+                    menu:
+                        "When will you be awarded?":
+                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "How did you solve the case?":
+                                    colonel "The last bit of evidence I needed was the candlestick..."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "What's that?":
+                                            colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Are you bringing it with you to the award ceremony?":
+                                                    colonel "Of course not! It stays safely on my mantle."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When will you be awarded?":
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Sounds good!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "Congradulations!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds valuable...":
+                                                    colonel "I suppose so... Goodbye."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Nice Job!":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Did you find evidence of the murder?":
+                                    colonel "The last bit of evidence I needed was the candlestick..."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "What's that?":
+                                            colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Are you bringing it with you to the award ceremony?":
+                                                    colonel "Of course not! It stays safely on my mantle."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When will you be awarded?":
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Sounds good!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "Congradulations!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds valuable...":
+                                                    colonel "I suppose so... Goodbye."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Nice Job!":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+
+                        "Sounds like fun!":
+                            colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What's that?":
+                                    colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Are you bringing it with you to the award ceremony?":
+                                            colonel "Of course not! It stays safely on my mantle."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "When will you be awarded?":
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Sounds good!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "Congradulations!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "See ya!":
+                                                    colonel "Goodbye... Jim..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Sounds valuable...":
+                                            colonel "I suppose so... Goodbye."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Interesting...":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Nice Job!":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Well, have fun with it!":
+                            colonel "I'm sure I will."
+                            $ curTimeMin = curTimeMin + timeConstant
+                "How is your day going?":
+                    colonel "I'll give you a clue: Starts with 'Just' and ends with 'Fine'!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "Right...":
+                            colonel "Im off."
+                            $ curTimeMin = curTimeMin + timeConstant
+                        "Well, any plans tonight?":
+                            colonel "Yes I'm going to be awarded for solving a murder! I did it!"
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "When will you be awarded?":
+                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "How did you solve the case?":
+                                            colonel "The last bit of evidence I needed was the candlestick..."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "What's that?":
+                                                    colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Are you bringing it with you to the award ceremony?":
+                                                            colonel "Of course not! It stays safely on my mantle."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "When will you be awarded?":
+                                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                    menu:
+                                                                        "Sounds good!":
+                                                                            colonel "Goodbye... Jim..."
+                                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                                        "Congradulations!":
+                                                                            colonel "Goodbye... Jim..."
+                                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                                "See ya!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "Sounds valuable...":
+                                                            colonel "I suppose so... Goodbye."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Interesting...":
+                                                    colonel "Thank you... Goodbye!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Nice Job!":
+                                                    colonel "Thank you... Goodbye!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Did you find evidence of the murder?":
+                                            colonel "The last bit of evidence I needed was the candlestick..."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "What's that?":
+                                                    colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Are you bringing it with you to the award ceremony?":
+                                                            colonel "Of course not! It stays safely on my mantle."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "When will you be awarded?":
+                                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                    menu:
+                                                                        "Sounds good!":
+                                                                            colonel "Goodbye... Jim..."
+                                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                                        "Congradulations!":
+                                                                            colonel "Goodbye... Jim..."
+                                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                                "See ya!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "Sounds valuable...":
+                                                            colonel "I suppose so... Goodbye."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Interesting...":
+                                                    colonel "Thank you... Goodbye!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                "Nice Job!":
+                                                    colonel "Thank you... Goodbye!"
+                                                    $ curTimeMin = curTimeMin + timeConstant
+
+                                "Sounds like fun!":
+                                    colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "What's that?":
+                                            colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Are you bringing it with you to the award ceremony?":
+                                                    colonel "Of course not! It stays safely on my mantle."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When will you be awarded?":
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Sounds good!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "Congradulations!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds valuable...":
+                                                    colonel "I suppose so... Goodbye."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Nice Job!":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Well, have fun with it!":
+                                    colonel "I'm sure I will."
+                                    $ curTimeMin = curTimeMin + timeConstant
+        "How is your day going?":
+            colonel "I'll give you a clue: Starts with 'Just' and ends with 'Fine'!"
+            $ curTimeMin = curTimeMin + timeConstant
+            menu:
+                "Right...":
+                    colonel "Im off."
+                    $ curTimeMin = curTimeMin + timeConstant
+                "Well, any plans tonight?":
+                    colonel "Yes I'm going to be awarded for solving a murder! I did it!"
+                    $ curTimeMin = curTimeMin + timeConstant
+                    menu:
+                        "When will you be awarded?":
+                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "How did you solve the case?":
+                                    colonel "The last bit of evidence I needed was the candlestick..."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "What's that?":
+                                            colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Are you bringing it with you to the award ceremony?":
+                                                    colonel "Of course not! It stays safely on my mantle."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When will you be awarded?":
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Sounds good!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "Congradulations!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds valuable...":
+                                                    colonel "I suppose so... Goodbye."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Nice Job!":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Did you find evidence of the murder?":
+                                    colonel "The last bit of evidence I needed was the candlestick..."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "What's that?":
+                                            colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "Are you bringing it with you to the award ceremony?":
+                                                    colonel "Of course not! It stays safely on my mantle."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "When will you be awarded?":
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                            menu:
+                                                                "Sounds good!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                                "Congradulations!":
+                                                                    colonel "Goodbye... Jim..."
+                                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                        "See ya!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "Sounds valuable...":
+                                                    colonel "I suppose so... Goodbye."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Interesting...":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                        "Nice Job!":
+                                            colonel "Thank you... Goodbye!"
+                                            $ curTimeMin = curTimeMin + timeConstant
+
+                        "Sounds like fun!":
+                            colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                            $ curTimeMin = curTimeMin + timeConstant
+                            menu:
+                                "What's that?":
+                                    colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                    menu:
+                                        "Are you bringing it with you to the award ceremony?":
+                                            colonel "Of course not! It stays safely on my mantle."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                            menu:
+                                                "When will you be awarded?":
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                                    menu:
+                                                        "Sounds good!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                        "Congradulations!":
+                                                            colonel "Goodbye... Jim..."
+                                                            $ curTimeMin = curTimeMin + timeConstant
+                                                "See ya!":
+                                                    colonel "Goodbye... Jim..."
+                                                    $ curTimeMin = curTimeMin + timeConstant
+                                        "Sounds valuable...":
+                                            colonel "I suppose so... Goodbye."
+                                            $ curTimeMin = curTimeMin + timeConstant
+                                "Interesting...":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                                "Nice Job!":
+                                    colonel "Thank you... Goodbye!"
+                                    $ curTimeMin = curTimeMin + timeConstant
+                        "Well, have fun with it!":
+                            colonel "I'm sure I will."
+                            $ curTimeMin = curTimeMin + timeConstant
     hide char colonel
     jump homeScreen
     return
@@ -25,7 +499,7 @@ label talkColonelKetchupNotItem:
                     colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
                     $ curTimeMin = curTimeMin + timeConstant
                 "Hear anything else about it?":
-                    colonel "I think youll need to ask them yourself."
+                    colonel "I think you'll need to ask them yourself."
                     $ curTimeMin = curTimeMin + timeConstant
         "Hello Colonel!":
             colonel "... Hi ... Jim ..."
@@ -42,10 +516,10 @@ label talkColonelKetchupNotItem:
                             colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
                             $ curTimeMin = curTimeMin + timeConstant
                         "Hear anything else about it?":
-                            colonel "I think youll need to ask them yourself."
+                            colonel "I think you'll need to ask them yourself."
                             $ curTimeMin = curTimeMin + timeConstant
                 "How is your day going?":
-                    colonel "I'll give you a clue; it starts with 'Just' and ends with 'Fine'!"
+                    colonel "I'll give you a clue, it starts with 'Just' and ends with 'Fine'!"
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "Right...":
@@ -62,10 +536,10 @@ label talkColonelKetchupNotItem:
                                     colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Hear anything else about it?":
-                                    colonel "I think youll need to ask them yourself."
+                                    colonel "I think you'll need to ask them yourself."
                                     $ curTimeMin = curTimeMin + timeConstant
         "How is your day going?":
-            colonel "I'll give you a clue; it starts with 'Just' and ends with 'Fine'!"
+            colonel "I'll give you a clue, it starts with 'Just' and ends with 'Fine'!"
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "Right...":
@@ -82,7 +556,7 @@ label talkColonelKetchupNotItem:
                             colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
                             $ curTimeMin = curTimeMin + timeConstant
                         "Hear anything else about it?":
-                            colonel "I think youll need to ask them yourself."
+                            colonel "I think you'll need to ask them yourself."
                             $ curTimeMin = curTimeMin + timeConstant
 
     hide char colonel
@@ -144,11 +618,10 @@ label colonelKetchupRoom:
                 $ renpy.pause(1.0)
                 jump jailState
     else:
-        coach "Ahh, you frightened me! And if anyone asks, I totally had no idea that the football was deflated."
-        show char coach
-        jim "Sure.. I bet..."
-        coach "Well, you are invading my privacy, so I have informed my two largest linemen and they are on their way to take you to the authorities."
-        coach "You being gone will let a little pressure out of my life."
+        colonel "Ahh, you frightened me! "
+        show char colonel
+        jim "Sure.. I bet... Why are you holding a bloody candlestick?"
+        colonel "You're next."
         $ renpy.pause(1.0)
         hide char coach
         jump jailState
