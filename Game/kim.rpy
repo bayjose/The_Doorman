@@ -22,11 +22,11 @@ label talkKimItem:
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Oh, are the old ones beat up or something?":
-                                    kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                    kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "I see, don't spend your whole day shopping though.":
-                                            kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Alright, have fun!":
@@ -49,11 +49,11 @@ label talkKimItem:
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Oh, are the old ones beat up or something?":
-                                    kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                    kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "I see, don't spend your whole day shopping though.":
-                                            kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Alright, have fun!":
@@ -128,11 +128,11 @@ label talkKimItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Oh, are the old ones beat up or something?":
-                                            kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                            kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -155,11 +155,11 @@ label talkKimItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Oh, are the old ones beat up or something?":
-                                            kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                            kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -234,11 +234,11 @@ label talkKimItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Oh, are the old ones beat up or something?":
-                                                    kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                                    kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "I see, don't spend your whole day shopping though.":
-                                                            kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Alright, have fun!":
@@ -261,11 +261,11 @@ label talkKimItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Oh, are the old ones beat up or something?":
-                                                    kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                                    kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "I see, don't spend your whole day shopping though.":
-                                                            kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Alright, have fun!":
@@ -343,11 +343,11 @@ label talkKimItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Oh, are the old ones beat up or something?":
-                                            kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                            kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -370,11 +370,11 @@ label talkKimItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Oh, are the old ones beat up or something?":
-                                            kim "Oh, the ones I have now are too valuble! I don't want to ruin them!"
+                                            kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back untill 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -449,10 +449,10 @@ label talkKimNotItem:
                     kim "Oh, you know, the usual. I gotta run, bye bye!"
                     $ curTimeMin = curTimeMin + timeConstant
                 "How are the neighbors?":
-                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                     $ curTimeMin = curTimeMin + timeConstant
                 "Any updtes?":
-                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                     $ curTimeMin = curTimeMin + timeConstant
         "Hey girl!":
             kim "Good day."
@@ -470,10 +470,10 @@ label talkKimNotItem:
                                     kim "Oh, you know, the usual. I gotta run, bye bye!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "How are the neighbors?":
-                                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Any updtes?":
-                                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                                    kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                                     $ curTimeMin = curTimeMin + timeConstant
                         "Any suspicious activity?":
                             kim "Um, if there was, i'd report it..."
@@ -486,10 +486,10 @@ label talkKimNotItem:
                             kim "Oh, you know, the usual. I gotta run, bye bye!"
                             $ curTimeMin = curTimeMin + timeConstant
                         "How are the neighbors?":
-                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                             $ curTimeMin = curTimeMin + timeConstant
                         "Any updtes?":
-                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                             $ curTimeMin = curTimeMin + timeConstant
         "Hey, How did you sleep?":
             kim "Oh, alright."
@@ -503,10 +503,10 @@ label talkKimNotItem:
                             kim "Oh, you know, the usual. I gotta run, bye bye!"
                             $ curTimeMin = curTimeMin + timeConstant
                         "How are the neighbors?":
-                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                             $ curTimeMin = curTimeMin + timeConstant
                         "Any updtes?":
-                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preocupied. They just stay in room #[targetCharacterRoom] all day."
+                            kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
                             $ curTimeMin = curTimeMin + timeConstant
                 "Any suspicious activity?":
                     kim "Um, if there was, i'd report it..."

@@ -50,7 +50,7 @@ label talkCoachItem:
                                             coach "Uh... I found it. Gotta go, see you!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                 "Maybe.":
-                                    coach "Here it is-oh wait..."
+                                    coach "Here it is - oh wait!"
                                     coach "This is the other teams playbook! Better not leave that."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
@@ -462,14 +462,14 @@ label talkCoachNotItem:
                     coach "This was right around [targetCharacterHourOut] o'clock last night."
                     $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 2:
-                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 3:
                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                         $ curTimeMin = curTimeMin + timeConstant
                 "Who did this?":
                     if targetCharacterFloor == 2:
-                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 3:
                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
@@ -494,14 +494,14 @@ label talkCoachNotItem:
                                     coach "This was right around [targetCharacterHourOut] o'clock last night."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 2:
-                                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 3:
                                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                                         $ curTimeMin = curTimeMin + timeConstant
                                 "Who did this?":
                                     if targetCharacterFloor == 2:
-                                        coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                                        coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 3:
                                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
@@ -520,14 +520,14 @@ label talkCoachNotItem:
                         "What time was this?":
                             coach "This was right around [targetCharacterHourOut] o'clock last night."
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who did this?":
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
@@ -547,14 +547,14 @@ label talkCoachNotItem:
                         "What time was this?":
                             coach "This was right around [targetCharacterHourOut] o'clock last night."
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who did this?":
                             if targetCharacterFloor == 2:
-                                coach "I'm not sure, but whoever they are, they were defenately on my floor."
+                                coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."

@@ -15,7 +15,7 @@ label talkChrisItem:
             chris "That is unacceptable! How will I be able to steal... Borrow your mail?"
             $ curTimeMin = curTimeMin + timeConstant
             menu:
-                "I still appriciate fresh bread!":
+                "I still appreciate fresh bread!":
                     chris "I am so glad to hear that, Pumpernickel is my favorite!"
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
@@ -24,11 +24,11 @@ label talkChrisItem:
                             hide char chris
                             $ curTimeMin = curTimeMin + timeConstant
                         "Where do you get all of the flour to make the bread?":
-                            chris "Oh, I use my magic bag of flour. It provides me with an infinate ammount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                            chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How interesting.":
-                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -64,8 +64,8 @@ label talkChrisItem:
                                     chris "No, I dont think that would work. I only tamper with USPS... I mean NOTHING! (Chris vanishes into a poof of flour)"
                                     hide char chris
                                     $ curTimeMin = curTimeMin + timeConstant
-                                "Sounds valuble.":
-                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                                "Sounds valuable.":
+                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -142,11 +142,11 @@ label talkChrisItem:
                     hide char chris
                     $ curTimeMin = curTimeMin + timeConstant
                 "Where do you get all of the flour to make the bread?":
-                    chris "Oh, I use my magic bag of flour. It provides me with an infinate ammount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                    chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "How interesting.":
-                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sounds like a waste.":
@@ -182,8 +182,8 @@ label talkChrisItem:
                             chris "No, I dont think that would work. I only tamper with USPS... I mean NOTHING! (Chris vanishes into a poof of flour)"
                             hide char chris
                             $ curTimeMin = curTimeMin + timeConstant
-                        "Sounds valuble.":
-                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                        "Sounds valuable.":
+                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sounds like a waste.":
@@ -256,7 +256,7 @@ label talkChrisItem:
                     chris "Probably pumpernickel, I just used some to steal your mail."
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
-                        "I can appriciate fresh bread!":
+                        "I can appreciate fresh bread!":
                             chris "I am so glad to hear that, Pumpernickel is my favorite!"
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
@@ -265,11 +265,11 @@ label talkChrisItem:
                                     hide char chris
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Where do you get all of the flour to make the bread?":
-                                    chris "Oh, I use my magic bag of flour. It provides me with an infinate ammount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                                    chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How interesting.":
-                                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a waste.":
@@ -305,8 +305,8 @@ label talkChrisItem:
                                             chris "No, I dont think that would work. I only tamper with USPS... I mean NOTHING! (Chris vanishes into a poof of flour)"
                                             hide char chris
                                             $ curTimeMin = curTimeMin + timeConstant
-                                        "Sounds valuble.":
-                                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                                        "Sounds valuable.":
+                                            chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a waste.":
@@ -376,7 +376,7 @@ label talkChrisItem:
                             hide char chris
                             $ curTimeMin = curTimeMin + timeConstant
                 "You seem suspicious...":
-                    chris "No... I'm not suspiccious. How can a man who bakes hundreds of loaves of Pumpernickel and steals peoples mail be suspicious?"
+                    chris "No... I'm not suspicious. How can a man who bakes hundreds of loaves of Pumpernickel and steals peoples mail be suspicious?"
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "I hate Pumpernickel.":
@@ -384,11 +384,11 @@ label talkChrisItem:
                             hide char chris
                             $ curTimeMin = curTimeMin + timeConstant
                         "Where do you get all of the flour to make the bread?":
-                            chris "Oh, I use my magic bag of flour. It provides me with an infinate ammount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                            chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How interesting.":
-                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -424,8 +424,8 @@ label talkChrisItem:
                                     chris "No, I dont think that would work. I only tamper with USPS... I mean NOTHING! (Chris vanishes into a poof of flour)"
                                     hide char chris
                                     $ curTimeMin = curTimeMin + timeConstant
-                                "Sounds valuble.":
-                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steel... Er...Um... Bake Bread!"
+                                "Sounds valuable.":
+                                    chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -515,12 +515,12 @@ label talkChrisNotItem:
                         "You steal mail?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                             hide char chris
-                            chris "(Chris diappears into a poof of flour)"
+                            chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
                         "How is this related?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                             hide char chris
-                            chris "(Chris diappears into a poof of flour)"
+                            chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
         "I found a Loaf of bread in my mail box.":
             chris "Could have been anyone..!"
@@ -543,12 +543,12 @@ label talkChrisNotItem:
                                 "You steal mail?":
                                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                                     hide char chris
-                                    chris "(Chris diappears into a poof of flour)"
+                                    chris "(Chris disappears into a poof of flour)"
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "How is this related?":
                                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                                     hide char chris
-                                    chris "(Chris diappears into a poof of flour)"
+                                    chris "(Chris disappears into a poof of flour)"
                                     $ curTimeMin = curTimeMin + timeConstant
                 "You smell like bread.":
                     chris "Well... that's strange... I do steal a lot of mail."
@@ -561,12 +561,12 @@ label talkChrisNotItem:
                         "You steal mail?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                             hide char chris
-                            chris "(Chris diappears into a poof of flour)"
+                            chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
                         "How is this related?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                             hide char chris
-                            chris "(Chris diappears into a poof of flour)"
+                            chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
         "You smell like bread.":
             chris "Well... that's strange... I do steal a lot of mail."
@@ -579,12 +579,12 @@ label talkChrisNotItem:
                 "You steal mail?":
                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                     hide char chris
-                    chris "(Chris diappears into a poof of flour)"
+                    chris "(Chris disappears into a poof of flour)"
                     $ curTimeMin = curTimeMin + timeConstant
                 "How is this related?":
                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
                     hide char chris
-                    chris "(Chris diappears into a poof of flour)"
+                    chris "(Chris disappears into a poof of flour)"
                     $ curTimeMin = curTimeMin + timeConstant
 
     hide char chris
