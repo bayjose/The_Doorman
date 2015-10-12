@@ -20,10 +20,10 @@ label talkMadamFelineNotItem:
             menu:
                 "What room are you in again?":
                     if targetCharacterFloor == 3:
-                        madam "Im in 304, and the sound definately came from my floor."
+                        madam "Im in 304, and the sound definitely came from my floor."
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 2:
-                        madam "Im in 304, and the sound definately came from below my floor."
+                        madam "Im in 304, and the sound definitely came from below my floor."
                         $ curTimeMin = curTimeMin + timeConstant
                 "Who was that again":
                     madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -41,10 +41,10 @@ label talkMadamFelineNotItem:
                     menu:
                         "What room are you in again?":
                             if targetCharacterFloor == 3:
-                                madam "Im in 304, and the sound definately came from my floor."
+                                madam "Im in 304, and the sound definitely came from my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 2:
-                                madam "Im in 304, and the sound definately came from below my floor."
+                                madam "Im in 304, and the sound definitely came from below my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again":
                             madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -65,10 +65,10 @@ label talkMadamFelineNotItem:
                             menu:
                                 "What room are you in again?":
                                     if targetCharacterFloor == 3:
-                                        madam "Im in 304, and the sound definately came from my floor."
+                                        madam "Im in 304, and the sound definitely came from my floor."
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 2:
-                                        madam "Im in 304, and the sound definately came from below my floor."
+                                        madam "Im in 304, and the sound definitely came from below my floor."
                                         $ curTimeMin = curTimeMin + timeConstant
                                 "Who was that again":
                                     madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -88,10 +88,10 @@ label talkMadamFelineNotItem:
                     menu:
                         "What room are you in again?":
                             if targetCharacterFloor == 3:
-                                madam "Im in 304, and the sound definately came from my floor."
+                                madam "Im in 304, and the sound definitely came from my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 2:
-                                madam "Im in 304, and the sound definately came from below my floor."
+                                madam "Im in 304, and the sound definitely came from below my floor."
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again":
                             madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -112,7 +112,7 @@ label madamFelineRoom:
             show char madam
             jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
             madam "Meoowww... (cough) (cough) Well, half a cat really."
-            madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
+            madam "Your presence at this hour indicates threatening intent. Get em Mr. Fluffers!"
             #play sound cat
             $ renpy.pause(1.0)
             hide char madam
@@ -137,7 +137,7 @@ label madamFelineRoom:
                         show char madam
                         jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
                         madam "Meoowww... (cough) (cough) Well, half a cat really."
-                        madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
+                        madam "Your presence at this hour indicates threatening intent. Get em Mr. Fluffers!"
                         #play sound cat
                         $ renpy.pause(1.0)
                         hide char madam
@@ -150,7 +150,7 @@ label madamFelineRoom:
                         jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
                         madam "Meoowww... (cough) (cough) Well, half a cat really."
                         madam "That was a total invasion of my privacy!"
-                        madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
+                        madam "Your presence at this hour indicates threatening intent. Get em Mr. Fluffers!"
                         #play sound cat
                         $ renpy.pause(1.0)
                         hide char madam
@@ -162,7 +162,7 @@ label madamFelineRoom:
                 show char madam
                 jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
                 madam "Meoowww... (cough) (cough) Well, half a cat really."
-                madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
+                madam "Your presence at this hour indicates threatening intent. Get em Mr. Fluffers!"
                 #play sound cat
                 $ renpy.pause(1.0)
                 hide char madam
@@ -174,7 +174,7 @@ label madamFelineRoom:
         show char madam
         jim "Err... Umm... I totally was NOT trying to steal anything from you, are you a cat?"
         madam "Meoowww... (cough) (cough) Well, half a cat really."
-        madam "Your presence at this hour indicates threating intent. Get em Mr. Fluffers!"
+        madam "Your presence at this hour indicates threatening intent. Get em Mr. Fluffers!"
         #play sound cat
         $ renpy.pause(1.0)
         hide char madam

@@ -183,7 +183,7 @@ label start:
         $ targetCharacterRoom  = 4
         $ targetCharacterHourOut = 20
         $ targetCharacterHourIn = 21
-    jim "Ok, the target item this game is to steel [itemName] from [targetCharacterName]"
+    jim "Ok, the target item this game is to steal [itemName] from [targetCharacterName]"
 
     jump initialize
     return
@@ -226,7 +226,7 @@ label doormanApartment:
     jim "Oh! Uh, that's great!"
     manager "It is indeed chap, I'm here to say that you're hired for the doorman position you applied for!"
     jim "Sweet! When do I start?"
-    manager "Tomorrow is a good time! Be in at 5 o'clock sharp!"
+    manager "Tomorrow is a good time! Be in at 5:00 sharp!"
     jim "Cool, I will see you then!"
     manager "*click*"
     jim "... He meant 5pm, right?"
@@ -252,7 +252,7 @@ label homeScreen:
         jump sleepState
 
     if curTimeHour >= 20:
-        jim "Wow its getting late. I may want to go try to steel something soon..."
+        jim "Wow its getting late. I may want to go try to steal something soon..."
         $ soundPlaying = renpy.music.get_playing(channel='music')
         if soundPlaying == music_night:
             jim "It's already night."
@@ -271,17 +271,17 @@ label homeScreen:
             "I'm gonna wait around for a half hour or so" if curTimeHour >= 20:
                 $ curTimeMin = curTimeMin + 30
                 jump homeScreen
-            "I'm gonna wait around for a five minutes or so" if curTimeHour >= 20:
+            "I'm gonna wait around for five minutes or so" if curTimeHour >= 20:
                 $ curTimeMin = curTimeMin + 5
                 jump homeScreen
-            "Ok this is it, im going to go steal something!" if curTimeHour >= 20:
+            "Ok this is it, I'm going to go steal something!" if curTimeHour >= 20:
                 jump elevator
-            "It's late, ill go to bed." if curTimeHour >= 20:
+            "It's late, I'll go to bed." if curTimeHour >= 20:
                 jump sleepState
             "Oh! Someones at the door!" if talked_to_everyone < 1:
                     $ curTimeHour = curTimeHour + 1
                     jump pickChar
-            "Well, ive talked to everyone, better wait untill tonight to make my move" if talked_to_everyone >= 1:
+            "Well, I've talked to everyone, better wait untill tonight to make my move" if talked_to_everyone >= 1:
                     show bg jimRoom
                     with dissolve
                     $ renpy.pause(1.0)
@@ -292,7 +292,7 @@ label homeScreen:
                     $ curTimeHour = 20;
                     stop music fadeout musicFadeoutConstant
                     play music music_night fadein 2.0
-                    jim "Alright Here I go!"
+                    jim "Alright, here I go!"
                     jump homeScreen
     hide bg lobby
     return
@@ -346,7 +346,7 @@ label pickChar:
                             if talked_colonel == 1:
                                 $ talked_to_everyone = 1
                                 jim "I seem to have talked to everyone, there is nobody at the door"
-                                jim "I guess i'd better wait until tonight, then go make my move."
+                                jim "I guess I'd better wait until tonight, then go make my move."
                                 show bg jimRoom
                                 with dissolve
                                 $ renpy.pause(1.0)
@@ -355,7 +355,7 @@ label pickChar:
                                 $ renpy.pause(1.0)
                                 $ curTimeMin = 30
                                 $ curTimeHour = 20;
-                                jim "Alright Here I go!"
+                                jim "Alright, here I go!"
                                 stop music fadeout musicFadeoutConstant
                                 play music music_night fadein 2.0
                                 jump homeScreen
@@ -477,9 +477,9 @@ label panCity:
 
     $ curTimeHour = 6
     jim "Well here it is Le Grand Monè"
-    jim "Wow this place is beautifull"
-    jim "I never though that I would ever be able to set foot in a building like this!"
-    jim "And to think that I get to live here during the week now, this is so fortunate for me."
+    jim "Wow, this place is beautiful"
+    jim "I never thought that I would ever be able to set foot in a building like this!"
+    jim "And to think that I get to live in Room 203 during the week now, this is so fortunate for me."
     stop music fadeout musicFadeoutConstant
     play music music_lobby fadein 2.0
     jump homeScreen

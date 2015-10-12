@@ -45,7 +45,7 @@ label talkColonelKetchupNotItem:
                             colonel "I think youll need to ask them yourself."
                             $ curTimeMin = curTimeMin + timeConstant
                 "How is your day going?":
-                    colonel "I'll give you a clue, it starts with 'Just' and ends with 'Fine'!"
+                    colonel "I'll give you a clue; it starts with 'Just' and ends with 'Fine'!"
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "Right...":
@@ -65,7 +65,7 @@ label talkColonelKetchupNotItem:
                                     colonel "I think youll need to ask them yourself."
                                     $ curTimeMin = curTimeMin + timeConstant
         "How is your day going?":
-            colonel "I'll give you a clue, it starts with 'Just' and ends with 'Fine'!"
+            colonel "I'll give you a clue; it starts with 'Just' and ends with 'Fine'!"
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "Right...":
@@ -96,7 +96,7 @@ label colonelKetchupRoom:
             show char colonel
             colonel "Ahhh, what are you doing here!"
             jim "Um... Nothing. Why are you holding a bloody candle stick?"
-            colonel "Umm... well... that's none of your buisness!"
+            colonel "Umm... well... that's none of your business!"
             jim "Oh my gosh! Am I a witness to a murder..?"
             colonel "Dang, are those the cops? They're onto us! RUN MAN"
             $ renpy.pause(1.0)
@@ -118,7 +118,7 @@ label colonelKetchupRoom:
                         show char colonel
                         colonel "Ahhh, what are you doing here!"
                         jim "Um... Nothing. Why are you holding a bloody candle stick?"
-                        colonel "Umm... well... that's none of your buisness!"
+                        colonel "Umm... well... that's none of your business!"
                         jim "Oh my gosh! Am I a witness to a murder..?"
                         colonel "Dang, are those the cops? They're onto us! RUN MAN"
                         $ renpy.pause(1.0)
@@ -128,7 +128,7 @@ label colonelKetchupRoom:
                         show char colonel
                         colonel "Ahhh, what are you doing here!"
                         jim "Um... Nothing. Why are you holding a bloody candle stick?"
-                        colonel "Umm... well... that's none of your buisness!"
+                        colonel "Umm... well... that's none of your business!"
                         jim "Oh my gosh! Am I a witness to a murder..?"
                         colonel "Dang, are those the cops? They're onto us! RUN MAN"
                         $ renpy.pause(1.0)
@@ -138,7 +138,7 @@ label colonelKetchupRoom:
                 show char colonel
                 colonel "Ahhh, what are you doing here!"
                 jim "Um... Nothing. Why are you holding a bloody candle stick?"
-                colonel "Umm... well... that's none of your buisness!"
+                colonel "Umm... well... that's none of your business!"
                 jim "Oh my gosh! Am I a witness to a murder..?"
                 colonel "Dang, are those the cops? They're onto us! RUN MAN"
                 $ renpy.pause(1.0)
