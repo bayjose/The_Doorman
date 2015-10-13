@@ -208,7 +208,7 @@ label start:
         $ targetCharacterRoom  = 4
         $ targetCharacterHourOut = 20
         $ targetCharacterHourIn = 21
-    #jim "Ok, the target item this game is to steel [itemName] from [targetCharacterName]"
+    #jim "Ok, the target item this game is to steal [itemName] from [targetCharacterName]"
     jump initialize
     return
 
@@ -345,7 +345,7 @@ label homeScreen:
         jump sleepState
 
     if curTimeHour >= 20:
-        jim "Wow its getting late. I may want to go try to steel something soon."
+        jim "Wow its getting late. I may want to go try to steal something soon."
         $ soundPlaying = renpy.music.get_playing(channel='music')
         if soundPlaying != music_night:
             stop music fadeout musicFadeoutConstant
@@ -359,7 +359,7 @@ label homeScreen:
         hide timeMin minute
         show bg lobbyBlur
         with dissolve
-        manager "Jim, the inhabitans here have reported you snooping around a lot."
+        manager "Jim, the inhabitants here have reported you snooping around a lot."
         jim "Uh... So, there are some pretty sketchy people living here!"
         manager "Yes, I can't dispute that, but those sketchy people pay to stay here, so I tolorate it."
         jim "Im pretty sure you have some criminals here to be perfectly honest."
@@ -369,7 +369,7 @@ label homeScreen:
         show item paycheck:
             xalign 0.5 yalign 0.5
         with dissolve
-        manager "Take your last paychek, I'm sorry to do this Jim."
+        manager "Take your last paycheck, I'm sorry to do this Jim."
         hide item paycheck
         with dissolve
         hide screen journal
@@ -390,7 +390,7 @@ label homeScreen:
             "I'm gonna wait around for a half hour or so." if curTimeHour >= 20:
                 $ curTimeMin = curTimeMin + 30
                 jump homeScreen
-            "I'm gonna wait around for a five minutes or so." if curTimeHour >= 20:
+            "I'm gonna wait around for five minutes or so." if curTimeHour >= 20:
                 $ curTimeMin = curTimeMin + 5
                 jump homeScreen
             "Ok this is it. im going to go steal something!" if curTimeHour >= 20:
@@ -400,7 +400,7 @@ label homeScreen:
                 hide timeMin minute
                 hide screen journal
                 jump elevator
-            "It's late,I'll go to bed." if curTimeHour >= 20:
+            "It's late, I'll go to bed." if curTimeHour >= 20:
                 hide clock clock
                 hide clock clockPm
                 hide timeHour hour
@@ -510,7 +510,7 @@ label pickChar:
                             if talked_colonel == 1:
                                 $ talked_to_everyone = 1
                                 jim "I seem to have talked to everyone, there is nobody at the door"
-                                jim "I guess i'd better wait until tonight, then go make my move."
+                                jim "I guess I'd better wait until tonight, then go make my move."
                                 show bg jimRoom
                                 with dissolve
                                 $ renpy.pause(1.0)
@@ -687,7 +687,7 @@ label panCity:
     $ renpy.pause(6.0)
     $ curTimeHour = morningConstant
     jim "Well here it is Le Grand Monè"
-    jim "Wow this place is beautifull"
+    jim "Wow this place is beautiful"
     jim "I never though that I would ever be able to set foot in a building like this!"
     jim "And to think that I get to live here during the week now, this is so fortunate for me."
     stop music fadeout musicFadeoutConstant
@@ -706,8 +706,8 @@ label getPaid:
     stop music fadeout musicFadeoutConstant
     play music music_night fadein 2.0
     $ renpy.pause(1.0)
-    "Jim works hard. He puts in his 8 hours every day and becomes aquainted with the various inhabitants of Le Grand Monè."
-    "Jim realises that not only is this Hotel beautifull and expensive looking, the inhabitans seem to be pretty well off."
+    "Jim works hard. He puts in his 8 hours every day and becomes acquainted with the various inhabitants of Le Grand Monè."
+    "Jim realises that not only is this Hotel beautiful and expensive looking, the inhabitants seem to be pretty well off."
     $ renpy.pause(1.0)
     "After two weeks pass, Jim recieves his first paycheck."
     $ renpy.pause(1.0)
@@ -722,7 +722,7 @@ label getPaid:
     jim "Wha..."
     jim "$50! I cannot support myself off of $25 a week!"
     jim "Hmm... This hotel is full of wealthy people, and I really have nothing to lose."
-    jim "I'm going to steal from the ritchest person here! Now if only I could figure out who that is."
+    jim "I'm going to steal from the richest person here! Now if only I could figure out who that is."
     hide item paycheck
     with dissolve
     show bg lobby
@@ -766,7 +766,7 @@ label winState:
     with dissolve
     $ money = renpy.random.randint(1, 10)
     owner "That's a very nice [itemName] you have there, that is worth a fortune!"
-    jim "Thanks, It's defenately NOT stolen!"
+    jim "Thanks, It's definitely NOT stolen!"
     owner "Well that's a relief, I can offer you $[money],000,000 for it."
     jim "That's too low for me."
     owner "What about $[money],000,001"
