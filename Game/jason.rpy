@@ -14,6 +14,9 @@ label talkJasonItem:
             menu:
                 "Sounds like fun!":
                     jason "Yeah! Wonder if I can impress anyone with my Fleece!"
+                    python:
+                        tempShort = shortTermMemory
+                        tempShort.append("Jason has a fleece that he tries to impress people with.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "Interesting...":
@@ -24,6 +27,9 @@ label talkJasonItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "What's that?":
                             jason "My Golden Fleece! It's my most prized possesion!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Jason's fleece is golden and very valuable.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Do you bring something that valuable to a party?":
@@ -55,10 +61,16 @@ label talkJasonItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "What's that?":
                                     jason "My Golden Fleece! It's my most prized possesion!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Jason's fleece is golden and very valuable.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is stored under his bed.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Have fun!":
@@ -85,10 +97,16 @@ label talkJasonItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "What's that?":
                                     jason "My Golden Fleece! It's my most prized possesion!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Jason's fleece is golden and very valuable.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is stored under his bed.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Have fun!":
@@ -120,6 +138,9 @@ label talkJasonItem:
                             menu:
                                 "Sounds like fun!":
                                     jason "Yeah! Wonder if I can impress anyone with my Fleece!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Jason has a fleece that he tries to impress people with.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Interesting...":
@@ -130,10 +151,16 @@ label talkJasonItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                         "What's that?":
                                             jason "My Golden Fleece! It's my most prized possesion!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is golden and very valuable.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is stored under his bed.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Have fun!":
@@ -161,10 +188,16 @@ label talkJasonItem:
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                 "What's that?":
                                                     jason "My Golden Fleece! It's my most prized possesion!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is golden and very valuable.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Do you bring something that valuable to a party?":
                                                             jason "No way man! I keep that thing under my bed until I need it!"
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Jason's fleece is stored under his bed.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Have fun!":
@@ -191,10 +224,16 @@ label talkJasonItem:
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                 "What's that?":
                                                     jason "My Golden Fleece! It's my most prized possesion!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is golden and very valuable.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Do you bring something that valuable to a party?":
                                                             jason "No way man! I keep that thing under my bed until I need it!"
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Jason's fleece is stored under his bed.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Have fun!":
@@ -216,6 +255,9 @@ label talkJasonItem:
                     menu:
                         "Sounds like fun!":
                             jason "Yeah! Wonder if I can impress anyone with my Fleece!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Jason has a fleece that he tries to impress people with.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Interesting...":
@@ -226,10 +268,16 @@ label talkJasonItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "What's that?":
                                     jason "My Golden Fleece! It's my most prized possesion!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Jason's fleece is golden and very valuable.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is stored under his bed.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Have fun!":
@@ -257,10 +305,16 @@ label talkJasonItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                         "What's that?":
                                             jason "My Golden Fleece! It's my most prized possesion!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is golden and very valuable.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is stored under his bed.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Have fun!":
@@ -287,10 +341,16 @@ label talkJasonItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                         "What's that?":
                                             jason "My Golden Fleece! It's my most prized possesion!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is golden and very valuable.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is stored under his bed.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Have fun!":
@@ -318,6 +378,9 @@ label talkJasonItem:
                     menu:
                         "Sounds like fun!":
                             jason "Yeah! Wonder if I can impress anyone with my Fleece!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Jason has a fleece that he tries to impress people with.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Interesting...":
@@ -328,10 +391,16 @@ label talkJasonItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "What's that?":
                                     jason "My Golden Fleece! It's my most prized possesion!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Jason's fleece is golden and very valuable.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Do you bring something that valuable to a party?":
                                             jason "No way man! I keep that thing under my bed until I need it!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is stored under his bed.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Have fun!":
@@ -359,10 +428,16 @@ label talkJasonItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                         "What's that?":
                                             jason "My Golden Fleece! It's my most prized possesion!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is golden and very valuable.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is stored under his bed.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Have fun!":
@@ -389,10 +464,16 @@ label talkJasonItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                         "What's that?":
                                             jason "My Golden Fleece! It's my most prized possesion!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Jason's fleece is golden and very valuable.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Do you bring something that valuable to a party?":
                                                     jason "No way man! I keep that thing under my bed until I need it!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Jason's fleece is stored under his bed.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Have fun!":
@@ -408,17 +489,29 @@ label talkJasonItem:
                                             jason "Thanks, see ya!"
                                             $ curTimeMin = curTimeMin + timeConstant
     hide char jason
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
 label talkJasonNotItem:
     menu:
         "What are you up to today?":
-            jason "Not much, but I hear that [targetCharacterName] has something going on later"
+            jason "Not much, but I hear that [targetCharacterName] has something going on later."
+            python:
+                tempShort = shortTermMemory
+                targetName = targetCharacterName
+                tempShort.append("Jason thinks that "+targetName+" has been up to something.")
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "What room are they in?":
                     jason "I can't rememember the specific room, but they live on floor #[targetCharacterFloor]... I think?"
+                    python:
+                        tempShort = shortTermMemory
+                        targetName = targetCharacterName
+                        targetRoom = targetCharacterRoom
+                        tempShort.append("Jason thinks that "+targetName+" lives in room #"+str(targetRoom)+".")
                     $ curTimeMin = curTimeMin + timeConstant
                 "Who was that again?":
                     jason "[targetCharacterName], Isn't it your job to know them?"
@@ -431,11 +524,20 @@ label talkJasonNotItem:
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "What are you up to today?":
-                    jason "Not much, but I hear that [targetCharacterName] has something going on later"
+                    jason "Not much, but I hear that [targetCharacterName] has something going on later."
+                    python:
+                        tempShort = shortTermMemory
+                        targetName = targetCharacterName
+                        tempShort.append("Jason thinks that "+targetName+" has been up to something.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What room are they in?":
                             jason "I can't rememember the specific room, but they live on floor #[targetCharacterFloor]... I think?"
+                            python:
+                                tempShort = shortTermMemory
+                                targetName = targetCharacterName
+                                targetRoom = targetCharacterRoom
+                                tempShort.append("Jason thinks that "+targetName+" lives in room #"+str(targetRoom)+".")
                             $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again?":
                             jason "[targetCharacterName], Isn't it your job to know them?"
@@ -448,11 +550,20 @@ label talkJasonNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "Anyway, what are you up to today?":
-                            jason "Not much, but I hear that [targetCharacterName] has something going on later"
+                            jason "Not much, but I hear that [targetCharacterName] has something going on later."
+                            python:
+                                tempShort = shortTermMemory
+                                targetName = targetCharacterName
+                                tempShort.append("Jason thinks that "+targetName+" has been up to something.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What room are they in?":
                                     jason "I can't rememember the specific room, but they live on floor #[targetCharacterFloor]... I think?"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        targetName = targetCharacterName
+                                        targetRoom = targetCharacterRoom
+                                        tempShort.append("Jason thinks that "+targetName+" lives in room #"+str(targetRoom)+".")
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Who was that again?":
                                     jason "[targetCharacterName], Isn't it your job to know them?"
@@ -467,11 +578,20 @@ label talkJasonNotItem:
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "Anyway, what are you up to today?":
-                    jason "Not much, but I hear that [targetCharacterName] has something going on later"
+                    jason "Not much, but I hear that [targetCharacterName] has something going on later."
+                    python:
+                        tempShort = shortTermMemory
+                        targetName = targetCharacterName
+                        tempShort.append("Jason thinks that "+targetName+" has been up to something.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What room are they in?":
                             jason "I can't rememember the specific room, but they live on floor #[targetCharacterFloor]... I think?"
+                            python:
+                                tempShort = shortTermMemory
+                                targetName = targetCharacterName
+                                targetRoom = targetCharacterRoom
+                                tempShort.append("Jason thinks that "+targetName+" lives in room #"+str(targetRoom)+".")
                             $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again?":
                             jason "[targetCharacterName], Isn't it your job to know them?"
@@ -482,6 +602,9 @@ label talkJasonNotItem:
                 "Right...":
                     jason "Hey, you just don't get me, man!"
     hide char jason
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -503,7 +626,9 @@ label jasonRoom:
 
         if curTimeHour >= 22:
             if curTimeHour < 23:
-                jim "Jason should be at his party now, its [curTimeHour] [curTimeMin]"
+                python:
+                    theTime = getTime()
+                jim "[targetCharacterName] shouldn't be here now, it's [theTime]."
                 jim "Now where should I look?"
                 menu:
                     "Under the bed.":

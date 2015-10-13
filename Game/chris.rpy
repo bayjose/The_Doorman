@@ -25,10 +25,16 @@ label talkChrisItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "Where do you get all of the flour to make the bread?":
                             chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How interesting.":
                                     chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -42,7 +48,12 @@ label talkChrisItem:
                                             menu:
                                                 "AhChooooo":
                                                     show char chris
-                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                    python:
+                                                        tempString = toTime(targetCharacterHourOut)
+                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds like a plan.":
@@ -66,6 +77,9 @@ label talkChrisItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Sounds valuable.":
                                     chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -79,7 +93,12 @@ label talkChrisItem:
                                             menu:
                                                 "AhChooooo":
                                                     show char chris
-                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                    python:
+                                                        tempString = toTime(targetCharacterHourOut)
+                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds like a plan.":
@@ -99,6 +118,9 @@ label talkChrisItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                         "I'm indifferent, as I have never tried it.":
                             chris "I bake bread all the time! I use my magic bag of flour, to bake loaves on loaves."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sounds like a waste.":
@@ -111,7 +133,12 @@ label talkChrisItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "AhChooooo":
-                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                            python:
+                                                tempString = toTime(targetCharacterHourOut)
+                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a plan.":
@@ -143,10 +170,16 @@ label talkChrisItem:
                     $ curTimeMin = curTimeMin + timeConstant
                 "Where do you get all of the flour to make the bread?":
                     chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                    python:
+                        tempShort = shortTermMemory
+                        tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "How interesting.":
                             chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sounds like a waste.":
@@ -160,7 +193,12 @@ label talkChrisItem:
                                     menu:
                                         "AhChooooo":
                                             show char chris
-                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                            python:
+                                                tempString = toTime(targetCharacterHourOut)
+                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a plan.":
@@ -184,6 +222,9 @@ label talkChrisItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "Sounds valuable.":
                             chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sounds like a waste.":
@@ -197,7 +238,12 @@ label talkChrisItem:
                                     menu:
                                         "AhChooooo":
                                             show char chris
-                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                            python:
+                                                tempString = toTime(targetCharacterHourOut)
+                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a plan.":
@@ -217,6 +263,9 @@ label talkChrisItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                 "That's a lot of bread.":
                     chris "I bake bread all the time! I use my magic bag of flour, to bake loaves on loaves."
+                    python:
+                        tempShort = shortTermMemory
+                        tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "Sounds like a waste.":
@@ -230,7 +279,12 @@ label talkChrisItem:
                             menu:
                                 "AhChooooo":
                                     show char chris
-                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                    python:
+                                        tempString = toTime(targetCharacterHourOut)
+                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a plan.":
@@ -266,10 +320,16 @@ label talkChrisItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Where do you get all of the flour to make the bread?":
                                     chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How interesting.":
                                             chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a waste.":
@@ -283,7 +343,12 @@ label talkChrisItem:
                                                     menu:
                                                         "AhChooooo":
                                                             show char chris
-                                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                            python:
+                                                                tempString = toTime(targetCharacterHourOut)
+                                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds like a plan.":
@@ -307,6 +372,9 @@ label talkChrisItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                         "Sounds valuable.":
                                             chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a waste.":
@@ -320,7 +388,12 @@ label talkChrisItem:
                                                     menu:
                                                         "AhChooooo":
                                                             show char chris
-                                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                            python:
+                                                                tempString = toTime(targetCharacterHourOut)
+                                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds like a plan.":
@@ -340,6 +413,9 @@ label talkChrisItem:
                                                     $ curTimeMin = curTimeMin + timeConstant
                                 "I'm indifferent, as I have never tried it.":
                                     chris "I bake bread all the time! I use my magic bag of flour, to bake loaves on loaves."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -353,7 +429,12 @@ label talkChrisItem:
                                             menu:
                                                 "AhChooooo":
                                                     show char chris
-                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                    python:
+                                                        tempString = toTime(targetCharacterHourOut)
+                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds like a plan.":
@@ -385,10 +466,16 @@ label talkChrisItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "Where do you get all of the flour to make the bread?":
                             chris "Oh, I use my magic bag of flour. It provides me with an infinite amount of bread flour. I can make loaves on loaves of bread, then sell them to make loaves on loaves of cash."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How interesting.":
                                     chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -402,7 +489,12 @@ label talkChrisItem:
                                             menu:
                                                 "AhChooooo":
                                                     show char chris
-                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                    python:
+                                                        tempString = toTime(targetCharacterHourOut)
+                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds like a plan.":
@@ -426,6 +518,9 @@ label talkChrisItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Sounds valuable.":
                                     chris "Yea, I keep it in my cupboard, so it's ready at all times when I get the urge to steal... Er...Um... Bake Bread!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Chris keeps his magic bag of flour in his cupboard.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sounds like a waste.":
@@ -439,7 +534,12 @@ label talkChrisItem:
                                             menu:
                                                 "AhChooooo":
                                                     show char chris
-                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                                    python:
+                                                        tempString = toTime(targetCharacterHourOut)
+                                                    chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds like a plan.":
@@ -459,6 +559,9 @@ label talkChrisItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                         "Thats a lot of bread.":
                             chris "I bake bread all the time! I use my magic bag of flour, to bake loaves on loaves."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Chris has a magic bag of flour that he uses to bake bread.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sounds like a waste.":
@@ -472,7 +575,12 @@ label talkChrisItem:
                                     menu:
                                         "AhChooooo":
                                             show char chris
-                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [targetCharacterHourIn] promptly."
+                                            python:
+                                                tempString = toTime(targetCharacterHourOut)
+                                            chris "Ah, you blew my cover, with that exhalaton of facial gasses, I'm off! I will return at [tempString] promptly."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Chris will return to his room at "+toTime(targetCharacterHourOut)+".")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds like a plan.":
@@ -491,6 +599,9 @@ label talkChrisItem:
                                     chris "Bread is life! (Chris vanishes into a poof of flour)"
                                     $ curTimeMin = curTimeMin + timeConstant
     hide char chris
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -514,11 +625,21 @@ label talkChrisNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "You steal mail?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                            python:
+                                targetChar = targetCharacterName
+                                targetRoom = str(targetCharacterRoom)
+                                tempShort = shortTermMemory
+                                tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                             hide char chris
                             chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
                         "How is this related?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                            python:
+                                targetChar = targetCharacterName
+                                targetRoom = str(targetCharacterRoom)
+                                tempShort = shortTermMemory
+                                tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                             hide char chris
                             chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
@@ -542,11 +663,21 @@ label talkChrisNotItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "You steal mail?":
                                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                                    python:
+                                        targetChar = targetCharacterName
+                                        targetRoom = str(targetCharacterRoom)
+                                        tempShort = shortTermMemory
+                                        tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                                     hide char chris
                                     chris "(Chris disappears into a poof of flour)"
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "How is this related?":
                                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                                    python:
+                                        targetChar = targetCharacterName
+                                        targetRoom = str(targetCharacterRoom)
+                                        tempShort = shortTermMemory
+                                        tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                                     hide char chris
                                     chris "(Chris disappears into a poof of flour)"
                                     $ curTimeMin = curTimeMin + timeConstant
@@ -560,11 +691,21 @@ label talkChrisNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "You steal mail?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                            python:
+                                targetChar = targetCharacterName
+                                targetRoom = str(targetCharacterRoom)
+                                tempShort = shortTermMemory
+                                tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                             hide char chris
                             chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
                         "How is this related?":
                             chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                            python:
+                                targetChar = targetCharacterName
+                                targetRoom = str(targetCharacterRoom)
+                                tempShort = shortTermMemory
+                                tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                             hide char chris
                             chris "(Chris disappears into a poof of flour)"
                             $ curTimeMin = curTimeMin + timeConstant
@@ -578,16 +719,29 @@ label talkChrisNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                 "You steal mail?":
                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                    python:
+                        targetChar = targetCharacterName
+                        targetRoom = str(targetCharacterRoom)
+                        tempShort = shortTermMemory
+                        tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                     hide char chris
                     chris "(Chris disappears into a poof of flour)"
                     $ curTimeMin = curTimeMin + timeConstant
                 "How is this related?":
                     chris "Well I steal mail, then replace the mail with a loaf of Pumpernickel. I Especially like to steal [targetCharacterName]'s mail, out of room [targetCharacterRoom]'"
+                    python:
+                        targetChar = targetCharacterName
+                        targetRoom = str(targetCharacterRoom)
+                        tempShort = shortTermMemory
+                        tempShort.append(""+targetChar+" lives in room #"+targetRoom+".")
                     hide char chris
                     chris "(Chris disappears into a poof of flour)"
                     $ curTimeMin = curTimeMin + timeConstant
 
     hide char chris
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -606,7 +760,9 @@ label chrisRoom:
 
         if curTimeHour >= targetCharacterHourOut:
             if curTimeHour < targetCharacterHourIn:
-                jim "[targetCharacterName] shouldn't be here now, it's [curTimeHour] [curTimeMin]"
+                python:
+                    theTime = getTime()
+                jim "[targetCharacterName] shouldn't be here now, it's [theTime]."
                 jim "Where should I look now?"
                 menu:
                     "Under the bed.":

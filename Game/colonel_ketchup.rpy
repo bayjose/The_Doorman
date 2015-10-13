@@ -15,7 +15,10 @@ label talkColonelKetchupItem:
             colonel "I'm going to be awarded for solving a murder!"
             menu:
                 "When will you be awarded?":
-                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                    python:
+                        tempShort = shortTermMemory
+                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "How did you solve the case?":
@@ -24,14 +27,23 @@ label talkColonelKetchupItem:
                             menu:
                                 "What's that?":
                                     colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Colonel Ketchup has a candlestick.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Are you bringing it with you to the award ceremony?":
                                             colonel "Of course not! It stays safely on my mantle."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "When will you be awarded?":
-                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds good!":
@@ -58,14 +70,23 @@ label talkColonelKetchupItem:
                             menu:
                                 "What's that?":
                                     colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Colonel Ketchup has a candlestick.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Are you bringing it with you to the award ceremony?":
                                             colonel "Of course not! It stays safely on my mantle."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "When will you be awarded?":
-                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds good!":
@@ -88,19 +109,28 @@ label talkColonelKetchupItem:
                                     $ curTimeMin = curTimeMin + timeConstant
 
                 "Sounds like fun!":
-                    colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                    colonel "Yes. The last bit of evidence I needed was, the candlestick."
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What's that?":
                             colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Colonel Ketchup has a candlestick.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Are you bringing it with you to the award ceremony?":
                                     colonel "Of course not! It stays safely on my mantle."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "When will you be awarded?":
-                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Sounds good!":
@@ -131,7 +161,10 @@ label talkColonelKetchupItem:
                     colonel "I'm going to be awarded for solving a murder!"
                     menu:
                         "When will you be awarded?":
-                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How did you solve the case?":
@@ -140,14 +173,23 @@ label talkColonelKetchupItem:
                                     menu:
                                         "What's that?":
                                             colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup has a candlestick.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Are you bringing it with you to the award ceremony?":
                                                     colonel "Of course not! It stays safely on my mantle."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When will you be awarded?":
-                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds good!":
@@ -174,14 +216,23 @@ label talkColonelKetchupItem:
                                     menu:
                                         "What's that?":
                                             colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup has a candlestick.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Are you bringing it with you to the award ceremony?":
                                                     colonel "Of course not! It stays safely on my mantle."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When will you be awarded?":
-                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds good!":
@@ -204,19 +255,28 @@ label talkColonelKetchupItem:
                                             $ curTimeMin = curTimeMin + timeConstant
 
                         "Sounds like fun!":
-                            colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                            colonel "Yes. The last bit of evidence I needed was, the candlestick."
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What's that?":
                                     colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Colonel Ketchup has a candlestick.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Are you bringing it with you to the award ceremony?":
                                             colonel "Of course not! It stays safely on my mantle."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "When will you be awarded?":
-                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds good!":
@@ -252,7 +312,10 @@ label talkColonelKetchupItem:
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "When will you be awarded?":
-                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How did you solve the case?":
@@ -261,14 +324,23 @@ label talkColonelKetchupItem:
                                             menu:
                                                 "What's that?":
                                                     colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup has a candlestick.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Are you bringing it with you to the award ceremony?":
                                                             colonel "Of course not! It stays safely on my mantle."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "When will you be awarded?":
-                                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                                    python:
+                                                                        tempShort = shortTermMemory
+                                                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                                     menu:
                                                                         "Sounds good!":
@@ -295,14 +367,23 @@ label talkColonelKetchupItem:
                                             menu:
                                                 "What's that?":
                                                     colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup has a candlestick.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Are you bringing it with you to the award ceremony?":
                                                             colonel "Of course not! It stays safely on my mantle."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "When will you be awarded?":
-                                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                                    python:
+                                                                        tempShort = shortTermMemory
+                                                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                                     menu:
                                                                         "Sounds good!":
@@ -325,19 +406,28 @@ label talkColonelKetchupItem:
                                                     $ curTimeMin = curTimeMin + timeConstant
 
                                 "Sounds like fun!":
-                                    colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                                    colonel "Yes. The last bit of evidence I needed was, the candlestick."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "What's that?":
                                             colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup has a candlestick.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Are you bringing it with you to the award ceremony?":
                                                     colonel "Of course not! It stays safely on my mantle."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When will you be awarded?":
-                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds good!":
@@ -373,7 +463,10 @@ label talkColonelKetchupItem:
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "When will you be awarded?":
-                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How did you solve the case?":
@@ -382,14 +475,23 @@ label talkColonelKetchupItem:
                                     menu:
                                         "What's that?":
                                             colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup has a candlestick.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Are you bringing it with you to the award ceremony?":
                                                     colonel "Of course not! It stays safely on my mantle."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When will you be awarded?":
-                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds good!":
@@ -416,14 +518,23 @@ label talkColonelKetchupItem:
                                     menu:
                                         "What's that?":
                                             colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup has a candlestick.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Are you bringing it with you to the award ceremony?":
                                                     colonel "Of course not! It stays safely on my mantle."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When will you be awarded?":
-                                                            colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                            colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Sounds good!":
@@ -446,19 +557,28 @@ label talkColonelKetchupItem:
                                             $ curTimeMin = curTimeMin + timeConstant
 
                         "Sounds like fun!":
-                            colonel "Yes. The last bit of evidence I needed was the candlestick..."
+                            colonel "Yes. The last bit of evidence I needed was, the candlestick."
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What's that?":
                                     colonel "The candlestick was the murder weapon. I was allowed to keep it."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Colonel Ketchup has a candlestick.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Are you bringing it with you to the award ceremony?":
                                             colonel "Of course not! It stays safely on my mantle."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Colonel Ketchup keeps his candlestick on the mantle.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "When will you be awarded?":
-                                                    colonel "10:30, A bit late for my tastes, but I won't complain..."
+                                                    colonel "10:30, A bit late for my tastes, but I won't complain."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Colonel Ketchup will recieve an award at 10:30 tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Sounds good!":
@@ -483,6 +603,9 @@ label talkColonelKetchupItem:
                             colonel "I'm sure I will."
                             $ curTimeMin = curTimeMin + timeConstant
     hide char colonel
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -490,13 +613,22 @@ label talkColonelKetchupNotItem:
     menu:
         "What are you up to today?":
             colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+            python:
+                tempShort = shortTermMemory
+                targetName = targetCharacterName
+                tempShort.append("Colonel Ketchup believes that "+targetName+" is up to something.")
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "What room were they in?":
-                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                    colonel "They are in room #[targetCharacterRoom]. Surely you should know that."
+                    python:
+                        tempShort = shortTermMemory
+                        targetName = targetCharacterName
+                        targetRoom = targetCharacterRoom
+                        tempShort.append(targetName+" lives in room #"+str(targetRoom))
                     $ curTimeMin = curTimeMin + timeConstant
                 "Who was that again?":
-                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                    colonel "[targetCharacterName], surely you should know that."
                     $ curTimeMin = curTimeMin + timeConstant
                 "Hear anything else about it?":
                     colonel "I think you'll need to ask them yourself."
@@ -507,13 +639,22 @@ label talkColonelKetchupNotItem:
             menu:
                 "What are you up to today?":
                     colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+                    python:
+                        tempShort = shortTermMemory
+                        targetName = targetCharacterName
+                        tempShort.append("Colonel Ketchup believes that "+targetName+" is up to something.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What room were they in?":
-                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            colonel "They are in room #[targetCharacterRoom]. Surely you should know that."
+                            python:
+                                tempShort = shortTermMemory
+                                targetName = targetCharacterName
+                                targetRoom = targetCharacterRoom
+                                tempShort.append(targetName+" lives in room #"+str(targetRoom))
                             $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again?":
-                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            colonel "[targetCharacterName], surely you should know that."
                             $ curTimeMin = curTimeMin + timeConstant
                         "Hear anything else about it?":
                             colonel "I think you'll need to ask them yourself."
@@ -527,13 +668,22 @@ label talkColonelKetchupNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "Anyway, what are you up to today?":
                             colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+                            python:
+                                tempShort = shortTermMemory
+                                targetName = targetCharacterName
+                                tempShort.append("Colonel Ketchup believes that "+targetName+" is up to something.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What room were they in?":
-                                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                                    colonel "They are in room #[targetCharacterRoom]. Surely you should know that."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        targetName = targetCharacterName
+                                        targetRoom = targetCharacterRoom
+                                        tempShort.append(targetName+" lives in room #"+str(targetRoom))
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Who was that again?":
-                                    colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                                    colonel "[targetCharacterName], surely you should know that."
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Hear anything else about it?":
                                     colonel "I think you'll need to ask them yourself."
@@ -547,19 +697,31 @@ label talkColonelKetchupNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                 "Anyway, what are you up to today?":
                     colonel "Nothing... I heard that [targetCharacterName] was up to something though."
+                    python:
+                        tempShort = shortTermMemory
+                        targetName = targetCharacterName
+                        tempShort.append("Colonel Ketchup believes that "+targetName+" is up to something.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What room were they in?":
-                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            colonel "They are in room #[targetCharacterRoom]. Surely you should know that."
+                            python:
+                                tempShort = shortTermMemory
+                                targetName = targetCharacterName
+                                targetRoom = targetCharacterRoom
+                                tempShort.append(targetName+" lives in room #"+str(targetRoom))
                             $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again?":
-                            colonel "The resident in room #[targetCharacterRoom]. Surely you should know that."
+                            colonel "[targetCharacterName], surely you should know that."
                             $ curTimeMin = curTimeMin + timeConstant
                         "Hear anything else about it?":
                             colonel "I think you'll need to ask them yourself."
                             $ curTimeMin = curTimeMin + timeConstant
 
     hide char colonel
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -577,7 +739,9 @@ label colonelKetchupRoom:
             jump jailState
         if curTimeHour >= targetCharacterHourOut:
             if curTimeHour < targetCharacterHourIn:
-                jim "[targetCharacterName] shouldn't be here now, it's [curTimeHour] [curTimeMin]"
+                python:
+                    theTime = getTime()
+                jim "[targetCharacterName] shouldn't be here now, it's [theTime]."
                 jim "now where should I look?"
                 menu:
                     "Under the bed.":

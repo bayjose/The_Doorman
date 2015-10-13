@@ -17,10 +17,16 @@ label talkMadamFelineItem:
                     madam "I'm off to my lab we are working on a prototype. I had the other one on my nightstand but it seems to have disappeared."
                     madam "One of my workers says that he will have a new prototype working by 8:00 tonight. He better have it working by 8:00 tonight because I go to bed promptly at 9:00"
                     madam "So I plan to be back by 9:00 tonight."
+                    python:
+                        tempShort = shortTermMemory
+                        tempShort.append("Madam Feline plans to be out from 8 o'clock PM, untill 9 o'clock PM.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What kind of prototype?":
                             madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How does that work?":
@@ -48,6 +54,9 @@ label talkMadamFelineItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                         "How interesting.":
                             madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "How does that work?":
@@ -82,10 +91,16 @@ label talkMadamFelineItem:
                     menu:
                         "How?":
                             madam "My lab is developing a DNA splicer. Spencer says it will be ready at 8:00 tonight."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Madam Feline will be out in her lab at 8 o'clock PM tonight.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "That sounds complicated...":
                                     madam "Well we developed one before, and I had it on my nightstand but it seems to have disappeared."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline's DNA splicer disappeared from her nightstand.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How terrible.":
@@ -125,10 +140,16 @@ label talkMadamFelineItem:
                             madam "I'm off to my lab we are working on a prototype. I had the other one on my nightstand but it seems to have disappeared."
                             madam "One of my workers says that he will have a new prototype working by 8:00 tonight. He better have it working by 8:00 tonight because I go to bed promptly at 9:00"
                             madam "So I plan to be back by 9:00 tonight."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Madam Feline plans to be out from 8 o'clock PM, untill 9 o'clock PM.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What kind of prototype?":
                                     madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How does that work?":
@@ -156,6 +177,9 @@ label talkMadamFelineItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                 "How interesting.":
                                     madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How does that work?":
@@ -190,10 +214,16 @@ label talkMadamFelineItem:
                             menu:
                                 "How?":
                                     madam "My lab is developing a DNA splicer. Spencer says it will be ready at 8:00 tonight."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "That sounds complicated...":
                                             madam "Well we developed one before, and I had it on my nightstand but it seems to have disappeared."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Madam Feline's DNA splicer disappeared from her nightstand.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "How terrible.":
@@ -234,10 +264,16 @@ label talkMadamFelineItem:
                                     madam "I'm off to my lab we are working on a prototype. I had the other one on my nightstand but it seems to have disappeared."
                                     madam "One of my workers says that he will have a new prototype working by 8:00 tonight. He better have it working by 8:00 tonight because I go to bed promptly at 9:00"
                                     madam "So I plan to be back by 9:00 tonight."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline plans to be out from 8 o'clock PM, untill 9 o'clock PM.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "What kind of prototype?":
                                             madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "How does that work?":
@@ -265,6 +301,9 @@ label talkMadamFelineItem:
                                                     $ curTimeMin = curTimeMin + timeConstant
                                         "How interesting.":
                                             madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "How does that work?":
@@ -299,10 +338,16 @@ label talkMadamFelineItem:
                                     menu:
                                         "How?":
                                             madam "My lab is developing a DNA splicer. Spencer says it will be ready at 8:00 tonight."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "That sounds complicated...":
                                                     madam "Well we developed one before, and I had it on my nightstand but it seems to have disappeared."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Madam Feline's DNA splicer disappeared from her nightstand.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "How terrible.":
@@ -345,10 +390,16 @@ label talkMadamFelineItem:
                             madam "I'm off to my lab we are working on a prototype. I had the other one on my nightstand but it seems to have disappeared."
                             madam "One of my workers says that he will have a new prototype working by 8:00 tonight. He better have it working by 8:00 tonight because I go to bed promptly at 9:00"
                             madam "So I plan to be back by 9:00 tonight."
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Madam Feline plans to be out from 8 o'clock PM, untill 9 o'clock PM.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What kind of prototype?":
                                     madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How does that work?":
@@ -376,6 +427,9 @@ label talkMadamFelineItem:
                                             $ curTimeMin = curTimeMin + timeConstant
                                 "How interesting.":
                                     madam "We have developed a device that will change the world. It turns the user into a cat. No longer will Mr. Fluffers need to groom himself, that's what mommy is for."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "How does that work?":
@@ -410,10 +464,16 @@ label talkMadamFelineItem:
                             menu:
                                 "How?":
                                     madam "My lab is developing a DNA splicer. Spencer says it will be ready at 8:00 tonight."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Madam Feline has some sort of DNA device which turns the user into a cat.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "That sounds complicated...":
                                             madam "Well we developed one before, and I had it on my nightstand but it seems to have disappeared."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Madam Feline's DNA splicer disappeared from her nightstand.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "How terrible.":
@@ -445,6 +505,9 @@ label talkMadamFelineItem:
                     madam "Well im sorry if my love of the feline kind offends you! Humph!"
                     $ curTimeMin = curTimeMin + timeConstant
     hide char madam
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -452,11 +515,19 @@ label talkMadamFelineNotItem:
     menu:
         "Hello Madam Feline, what are you up to today?":
             madam "Not much, though I am rather tired, Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+            python:
+                tempShort = shortTermMemory
+                tempHourIn = targetCharacterHourIn
+                tempLocation = targetCharacterItemLocation
+                tempShort.append("Last night someone woke Madam Feline up at "+toTime(tempHourIn)+" by saying, 'Ahh, it must have fallen from my "+tempLocation+" while I was gone!'.")
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "What room are you in again?":
                     if targetCharacterFloor == 3:
                         madam "Im in 303, and the sound definitely came from my floor."
+                        python:
+                            tempShort = shortTermMemory
+                            tempShort.append("This noise came from Madam Feline's floor.")
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 2:
                         madam "Im in 303, and the sound definitely came from below my floor."
@@ -473,14 +544,25 @@ label talkMadamFelineNotItem:
             menu:
                 "Hello Madam Feline, what are you up to today?":
                     madam "Not much, though I am rather tired, Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+                    python:
+                        tempShort = shortTermMemory
+                        tempHourIn = targetCharacterHourIn
+                        tempLocation = targetCharacterItemLocation
+                        tempShort.append("Last night someone woke Madam Feline up at "+toTime(tempHourIn)+" by saying, 'Ahh, it must have fallen from my "+tempLocation+" while I was gone!'.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What room are you in again?":
                             if targetCharacterFloor == 3:
                                 madam "Im in 303, and the sound definitely came from my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    tempShort.append("This noise came from Madam Feline's floor.")
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 2:
                                 madam "Im in 303, and the sound definitely came from below my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    tempShort.append("This noise came from below Madam Feline's floor.")
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again":
                             madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -497,14 +579,25 @@ label talkMadamFelineNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "My appologies Madam Feline, what are you up to today?":
                             madam "Not much, though I am rather tired, Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+                            python:
+                                tempShort = shortTermMemory
+                                tempHourIn = targetCharacterHourIn
+                                tempLocation = targetCharacterItemLocation
+                                tempShort.append("Last night someone woke Madam Feline up at "+toTime(tempHourIn)+" by saying, 'Ahh, it must have fallen from my "+tempLocation+" while I was gone!'.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What room are you in again?":
                                     if targetCharacterFloor == 3:
                                         madam "Im in 303, and the sound definitely came from my floor."
+                                        python:
+                                            tempShort = shortTermMemory
+                                            tempShort.append("This noise came from Madam Feline's floor.")
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 2:
                                         madam "Im in 303, and the sound definitely came from below my floor."
+                                        python:
+                                            tempShort = shortTermMemory
+                                            tempShort.append("This noise came from below Madam Feline's floor.")
                                         $ curTimeMin = curTimeMin + timeConstant
                                 "Who was that again":
                                     madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -520,14 +613,25 @@ label talkMadamFelineNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                 "Progress, then you must be bussy today.":
                     madam "Actually, I am rather tired. Someone woke me up last night. At around [targetCharacterHourIn] I heard, 'Ahh, it must have fallen from my [targetCharacterItemLocation] while I was gone!'"
+                    python:
+                        tempShort = shortTermMemory
+                        tempHourIn = targetCharacterHourIn
+                        tempLocation = targetCharacterItemLocation
+                        tempShort.append("Last night someone woke Madam Feline up at "+toTime(tempHourIn)+" by saying, 'Ahh, it must have fallen from my "+tempLocation+" while I was gone!'.")
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What room are you in again?":
                             if targetCharacterFloor == 3:
                                 madam "Im in 303, and the sound definitely came from my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    tempShort.append("This noise came from Madam Feline's floor.")
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 2:
                                 madam "Im in 303, and the sound definitely came from below my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    tempShort.append("This noise came from below Madam Feline's floor.")
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who was that again":
                             madam "I couldn't tell who's voice it was. Sorry I must be on my way now."
@@ -536,6 +640,9 @@ label talkMadamFelineNotItem:
                             madam "That was all, Neither Mr. Fluffers nor I woke up one other time last night. Now I must be on my way."
                             $ curTimeMin = curTimeMin + timeConstant
     hide char madam
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -556,7 +663,9 @@ label madamFelineRoom:
 
         if curTimeHour >= targetCharacterHourOut:
             if curTimeHour < targetCharacterHourIn:
-                jim "[targetCharacterName] shouldn't be here now, it's [curTimeHour] [curTimeMin]"
+                python:
+                    theTime = getTime()
+                jim "[targetCharacterName] shouldn't be here now, it's [theTime]."
                 jim "now where should I look?"
                 menu:
                     "In the litter box.":

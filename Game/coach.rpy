@@ -546,7 +546,9 @@ label talkCoachNotItem:
             $ curTimeMin = curTimeMin + timeConstant
             menu:
                 "What time was this?":
-                    coach "This was right around [targetCharacterHourOut] o'clock last night."
+                    python:
+                        tempString = toTime(targetCharacterHourOut)
+                    coach "This was right around [tempString] last night."
                     $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 2:
                         coach "I'm not sure, but whoever they are, they were definitely on my floor."
@@ -594,7 +596,9 @@ label talkCoachNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "What time was this?":
-                                    coach "This was right around [targetCharacterHourOut] o'clock last night."
+                                    python:
+                                        tempString = toTime(targetCharacterHourOut)
+                                    coach "This was right around [tempString] last night."
                                     $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 2:
                                         coach "I'm not sure, but whoever they are, they were definitely on my floor."
@@ -637,7 +641,9 @@ label talkCoachNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What time was this?":
-                            coach "This was right around [targetCharacterHourOut] o'clock last night."
+                            python:
+                                tempString = toTime(targetCharacterHourOut)
+                            coach "This was right around [tempString] last night."
                             if targetCharacterFloor == 2:
                                 coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                 python:
@@ -679,7 +685,9 @@ label talkCoachNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                     menu:
                         "What time was this?":
-                            coach "This was right around [targetCharacterHourOut] o'clock last night."
+                            python:
+                                tempString = toTime(targetCharacterHourOut)
+                            coach "This was right around [tempString] last night."
                             if targetCharacterFloor == 2:
                                 coach "I'm not sure, but whoever they are, they were definitely on my floor."
                                 python:

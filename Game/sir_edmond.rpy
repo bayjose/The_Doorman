@@ -19,6 +19,9 @@ label talkSirEdmondItem:
                     menu:
                         "And what a fine hat as well!":
                             edmund "Yes, it goes quite well with my diamond coated watch!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Sir Edmond has a diamond pocket watch.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                "I can imagine!":
@@ -27,6 +30,9 @@ label talkSirEdmondItem:
                                    menu:
                                        "I know, it will be so fanciful!":
                                            edmund "I just wish 11 o'clock would roll around sooner!"
+                                           python:
+                                               tempShort = shortTermMemory
+                                               tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                            $ curTimeMin = curTimeMin + timeConstant
                                            menu:
                                                "I know. Anyways I wont keep holding you back any longer.":
@@ -46,6 +52,9 @@ label talkSirEdmondItem:
                                    $ curTimeMin = curTimeMin + timeConstant
                         "I must say, the stitching is exquisite!":
                              edmund "Yes, it goes quite well with my diamond coated watch!"
+                             python:
+                                 tempShort = shortTermMemory
+                                 tempShort.append("Sir Edmond has a diamond pocket watch.")
                              $ curTimeMin = curTimeMin + timeConstant
                              menu:
                                 "I can imagine!":
@@ -54,6 +63,9 @@ label talkSirEdmondItem:
                                     menu:
                                         "I know, it will be so fanciful!":
                                             edmund "I just wish 11 o'clock would roll around sooner!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I know. Anyways I wont keep holding you back any longer.":
@@ -88,6 +100,9 @@ label talkSirEdmondItem:
                                     menu:
                                         "And?":
                                             edmund "If you had a watch as fancy as mine, that would help as well."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Sir Edmond has a diamond pocket watch.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Cool, thanks for the advice!":
@@ -125,6 +140,9 @@ label talkSirEdmondItem:
                             menu:
                                 "And what a fine hat as well!":
                                     edmund "Yes, it goes quite well with my diamond coated watch!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Sir Edmond has a diamond pocket watch.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                        "I can imagine!":
@@ -133,6 +151,9 @@ label talkSirEdmondItem:
                                            menu:
                                                "I know, it will be so fanciful!":
                                                    edmund "I just wish 11 o'clock would roll around sooner!"
+                                                   python:
+                                                       tempShort = shortTermMemory
+                                                       tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                                    $ curTimeMin = curTimeMin + timeConstant
                                                    menu:
                                                        "I know. Anyways I wont keep holding you back any longer.":
@@ -152,6 +173,9 @@ label talkSirEdmondItem:
                                            $ curTimeMin = curTimeMin + timeConstant
                                 "I must say, the stitching is exquisite!":
                                      edmund "Yes, it goes quite well with my diamond coated watch!"
+                                     python:
+                                         tempShort = shortTermMemory
+                                         tempShort.append("Sir Edmond has a diamond pocket watch.")
                                      $ curTimeMin = curTimeMin + timeConstant
                                      menu:
                                         "I can imagine!":
@@ -160,6 +184,9 @@ label talkSirEdmondItem:
                                             menu:
                                                 "I know, it will be so fanciful!":
                                                     edmund "I just wish 11 o'clock would roll around sooner!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "I know. Anyways I wont keep holding you back any longer.":
@@ -194,6 +221,9 @@ label talkSirEdmondItem:
                                             menu:
                                                 "And?":
                                                     edmund "If you had a watch as fancy as mine, that would help as well."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Sir Edmond has a diamond pocket watch.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Cool, thanks for the advice!":
@@ -232,6 +262,9 @@ label talkSirEdmondItem:
                                     menu:
                                         "And what a fine hat as well!":
                                             edmund "Yes, it goes quite well with my diamond coated watch!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Sir Edmond has a diamond pocket watch.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                "I can imagine!":
@@ -240,6 +273,9 @@ label talkSirEdmondItem:
                                                    menu:
                                                        "I know, it will be so fanciful!":
                                                            edmund "I just wish 11 o'clock would roll around sooner!"
+                                                           python:
+                                                               tempShort = shortTermMemory
+                                                               tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                                            $ curTimeMin = curTimeMin + timeConstant
                                                            menu:
                                                                "I know. Anyways I wont keep holding you back any longer.":
@@ -259,6 +295,9 @@ label talkSirEdmondItem:
                                                    $ curTimeMin = curTimeMin + timeConstant
                                         "I must say, the stitching is exquisite!":
                                              edmund "Yes, it goes quite well with my diamond coated watch!"
+                                             python:
+                                                 tempShort = shortTermMemory
+                                                 tempShort.append("Sir Edmond has a diamond pocket watch.")
                                              $ curTimeMin = curTimeMin + timeConstant
                                              menu:
                                                 "I can imagine!":
@@ -267,6 +306,9 @@ label talkSirEdmondItem:
                                                     menu:
                                                         "I know, it will be so fanciful!":
                                                             edmund "I just wish 11 o'clock would roll around sooner!"
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "I know. Anyways I wont keep holding you back any longer.":
@@ -301,6 +343,9 @@ label talkSirEdmondItem:
                                                     menu:
                                                         "And?":
                                                             edmund "If you had a watch as fancy as mine, that would help as well."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Sir Edmond has a diamond pocket watch.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Cool, thanks for the advice!":
@@ -342,6 +387,9 @@ label talkSirEdmondItem:
                             menu:
                                 "And what a fine hat as well!":
                                     edmund "Yes, it goes quite well with my diamond coated watch!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Sir Edmond has a diamond pocket watch.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                        "I can imagine!":
@@ -350,6 +398,9 @@ label talkSirEdmondItem:
                                            menu:
                                                "I know, it will be so fanciful!":
                                                    edmund "I just wish 11 o'clock would roll around sooner!"
+                                                   python:
+                                                       tempShort = shortTermMemory
+                                                       tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                                    $ curTimeMin = curTimeMin + timeConstant
                                                    menu:
                                                        "I know. Anyways I wont keep holding you back any longer.":
@@ -369,6 +420,9 @@ label talkSirEdmondItem:
                                            $ curTimeMin = curTimeMin + timeConstant
                                 "I must say, the stitching is exquisite!":
                                      edmund "Yes, it goes quite well with my diamond coated watch!"
+                                     python:
+                                         tempShort = shortTermMemory
+                                         tempShort.append("Sir Edmond has a diamond pocket watch.")
                                      $ curTimeMin = curTimeMin + timeConstant
                                      menu:
                                         "I can imagine!":
@@ -377,6 +431,9 @@ label talkSirEdmondItem:
                                             menu:
                                                 "I know, it will be so fanciful!":
                                                     edmund "I just wish 11 o'clock would roll around sooner!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Sir Edmond has a fancy ball at  11 o'clock tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "I know. Anyways I wont keep holding you back any longer.":
@@ -411,6 +468,9 @@ label talkSirEdmondItem:
                                             menu:
                                                 "And?":
                                                     edmund "If you had a watch as fancy as mine, that would help as well."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Sir Edmond has a diamond pocket watch.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Cool, thanks for the advice!":
@@ -439,6 +499,9 @@ label talkSirEdmondItem:
                     $ curTimeMin = curTimeMin + timeConstant
 
     hide char edmond
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -449,8 +512,18 @@ label talkSirEdmondNotItem:
             menu:
                 "How has your day been?":
                     edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                    python:
+                        tempShort = shortTermMemory
+                        tempName = targetCharacterName
+                        tempRoom = targetCharacterRoom
+                        tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                 "Any news?":
                     edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                    python:
+                        tempShort = shortTermMemory
+                        tempName = targetCharacterName
+                        tempRoom = targetCharacterRoom
+                        tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                 "How are the other guests at this hotel?":
                     edmund "Nobody likes a snoop you know."
         "Hello sir!":
@@ -466,8 +539,18 @@ label talkSirEdmondNotItem:
                             menu:
                                 "How has your day been?":
                                     edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempName = targetCharacterName
+                                        tempRoom = targetCharacterRoom
+                                        tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                                 "Any news?":
                                     edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempName = targetCharacterName
+                                        tempRoom = targetCharacterRoom
+                                        tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                                 "How are the other guests at this hotel?":
                                     edmund "Nobody likes a snoop you know."
                 "Looking sharp as ever.":
@@ -475,8 +558,18 @@ label talkSirEdmondNotItem:
                     menu:
                         "How has your day been?":
                             edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                         "Any news?":
                             edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                         "How are the other guests at this hotel?":
                             edmund "Nobody likes a snoop you know."
         "How was your sleep?":
@@ -489,12 +582,25 @@ label talkSirEdmondNotItem:
                     menu:
                         "How has your day been?":
                             edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                         "Any news?":
                             edmund "It seems that [targetCharacterName] in room #[targetCharacterRoom] has been a little rowdy lately."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Sir Edmond believes that "+tempName+", in room #"+targetRoom+" has been up to something lately.")
                         "How are the other guests at this hotel?":
                             edmund "Nobody likes a snoop you know."
 
     hide char edmond
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -513,7 +619,9 @@ label sirEdmondRoom:
 
         if curTimeHour >= targetCharacterHourOut:
             if curTimeHour < targetCharacterHourIn:
-                jim "[targetCharacterName] shouldn't be here now, it's [curTimeHour] [curTimeMin]"
+                python:
+                    theTime = getTime()
+                jim "[targetCharacterName] shouldn't be here now, it's [theTime]."
                 jim "now where should I look?"
                 menu:
                     "Under the bed.":
@@ -528,7 +636,7 @@ label sirEdmondRoom:
                         jump jailState
                     "In the nightstand.":
                         $ renpy.pause(1.0)
-                        show item flour
+                        show item watch
                         jim "I got it!"
                         jim "WOW this [itemName] is made completely out of diamonds."
                         jim "Now to sell this, and make my fortune!"

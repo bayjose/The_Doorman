@@ -56,7 +56,6 @@ image clock clockPm = "images/Item_Clock_pm.png"
 image timeMin minute = "images/Item_Clock_Minute.png"
 image timeHour hour = "images/Item_Clock_Hour.png"
 
-
 # Declare characters used by this game.
 define jim = Character('Jim', color="#c8ffc8")
 define manager = Character('Manager', color="#c8ffc8")
@@ -144,10 +143,36 @@ init python:
 
         if time < 12:
             time = time%12
-            return str(time)+" O'clock AM"
+            return str(time)+" o'clock AM"
         if time >= 12:
             time = time%12
-            return str(time)+" O'clock PM"
+            return str(time)+" o'clock PM"
+
+    def getTime ():
+        time = curTimeHour
+        minute = curTimeMin % 60
+        if time == 0 or time==24:
+            return "Midnight"
+        if time == 12:
+            return "Noon"
+
+        if time < 12:
+            time = time%12
+            if minute == 0:
+                return str(time)+" o'clock AM"
+            if minute == 5:
+                return str(time)+":0"+str(minute)+" AM"
+            else:
+                return str(time)+":"+str(minute)+" AM"
+
+        if time >= 12:
+            time = time%12
+            if minute == 0:
+                return str(time)+" o'clock PM"
+            if minute == 5:
+                return str(time)+":0"+str(minute)+" PM"
+            else:
+                return str(time)+":"+str(minute)+" PM"
 
 label start:
     play music music_menu
@@ -222,7 +247,8 @@ label initialize:
 
 screen journal():
     fixed:
-        textbutton "" xalign 0.999 yalign 0 xsize 128 ysize 128 action Jump("recapLongTerm")
+        add "images/Item_NotebookIcon.png" xalign 0.04 yalign 0.46
+        textbutton "" xalign 0.04 yalign 0.46 xsize 168 ysize 238 action Jump("recapLongTerm")
 
 label recapLongTerm:
     if memoryIndex < len(longTermMemory):
@@ -274,7 +300,7 @@ label doormanApartment:
     show bg jimRoom
     with dissolve
 
-    jump talkCoach
+    jump homeScreen
 
     jim "*Yawn* Ugh... looks like it's going to be another boring day for me."
 
@@ -338,6 +364,10 @@ label homeScreen:
     show timeMin minute:
         xalign -0.04 yalign 0.02 rotate curTimeMin * 6
 
+    python:
+        theTime = getTime()
+    jim "It's [theTime]."
+
     if curTimeHour >= 24:
         jim "Dang man, it's super late! I need to go to bed now."
         hide screen clock
@@ -351,12 +381,12 @@ label homeScreen:
             stop music fadeout musicFadeoutConstant
             play music music_night fadein 2.0
 
-
     if daysLeft <= 0:
         hide clock clock
         hide clock clockPm
         hide timeHour hour
         hide timeMin minute
+        hide screen journal
         show bg lobbyBlur
         with dissolve
         manager "Jim, the inhabitants here have reported you snooping around a lot."
@@ -416,7 +446,12 @@ label homeScreen:
                 hide screen journal
                 jump pickChar
 
-    hide bg lobby
+    jim "Well, I've already talked to everyone here, I should make my move."
+    $ curTimeMin = 0
+    $ curTimeHour = 20
+    hide screen clock
+    hide screen journal
+    jump homeScreen
     return
 
 #Color refrences for the name on the screen
@@ -509,20 +544,9 @@ label pickChar:
                         if talked_edmund == 1:
                             if talked_colonel == 1:
                                 $ talked_to_everyone = 1
-                                jim "I seem to have talked to everyone, there is nobody at the door"
+                                jim "I seem to have talked to everyone, there is nobody at the door."
                                 jim "I guess I'd better wait until tonight, then go make my move."
-                                show bg jimRoom
-                                with dissolve
-                                $ renpy.pause(1.0)
-                                show bg jimRoomNight
-                                with dissolve
-                                $ renpy.pause(1.0)
-                                $ curTimeMin = 30
-                                $ curTimeHour = 20;
-                                jim "Alright Here I go!"
-                                stop music fadeout musicFadeoutConstant
-                                play music music_night fadein 2.0
-                                jump homeScreen
+                                jump sleepState
 
     jump pickChar
     #eventualy use random to pick a character, for now just jump jason
@@ -554,10 +578,10 @@ label floorLobby:
 label elevator:
     show bg elevator
     with dissolve
-    jim "Well, here I am, ready to go in "
+    jim "Well, here I am, ready to go in."
     show bg buttons
     with dissolve
-    jim "which floor should I go to?"
+    jim "Which floor should I go to?"
     jump inElevatorButtons
     return
 
@@ -590,7 +614,7 @@ label inElevator:
         "[floorNumber]04":
             $ roomNumber = 4
     $ renpy.pause(1.0)
-    jim "Ok, here I go... Room [floorNumber]0[roomNumber]"
+    jim "Ok, here I go... Room [floorNumber]0[roomNumber]."
     show obj doordoor:
         xpos 400 ypos 0
     with dissolve
@@ -782,5 +806,5 @@ label winState:
 label credits:
     show mnu credits
     with dissolve
-    $ renpy.pause(8.0)
+    $ renpy.pause(16.0)
     return

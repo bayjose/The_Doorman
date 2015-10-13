@@ -26,7 +26,10 @@ label talkKimItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "I see, don't spend your whole day shopping though.":
-                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                            kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Alright, have fun!":
@@ -50,10 +53,16 @@ label talkKimItem:
                             menu:
                                 "Oh, are the old ones beat up or something?":
                                     kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Kim has a very valuble high heel shoe.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "I see, don't spend your whole day shopping though.":
-                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                            kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Alright, have fun!":
@@ -84,6 +93,9 @@ label talkKimItem:
                             menu:
                                 "Yeah, I guess shopping really isn't my thing.":
                                     kim "Hah! Yeah, most people wouldn't want to shop until 10 every day"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Kim will be out shopping until 10 o'clock PM tonight.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Yeah that's pretty late!":
@@ -129,10 +141,16 @@ label talkKimItem:
                                     menu:
                                         "Oh, are the old ones beat up or something?":
                                             kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim has a very valuble high heel shoe.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -156,10 +174,16 @@ label talkKimItem:
                                     menu:
                                         "Oh, are the old ones beat up or something?":
                                             kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim has a very valuble high heel shoe.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -190,6 +214,9 @@ label talkKimItem:
                                     menu:
                                         "Yeah, I guess shopping really isn't my thing.":
                                             kim "Hah! Yeah, most people wouldn't want to shop until 10 every day"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim will be out shopping until 10 o'clock PM tonight.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Yeah that's pretty late!":
@@ -235,10 +262,16 @@ label talkKimItem:
                                             menu:
                                                 "Oh, are the old ones beat up or something?":
                                                     kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim has a very valuble high heel shoe.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "I see, don't spend your whole day shopping though.":
-                                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                                            kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Alright, have fun!":
@@ -262,10 +295,16 @@ label talkKimItem:
                                             menu:
                                                 "Oh, are the old ones beat up or something?":
                                                     kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim has a very valuble high heel shoe.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "I see, don't spend your whole day shopping though.":
-                                                            kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                                            kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Alright, have fun!":
@@ -296,6 +335,9 @@ label talkKimItem:
                                             menu:
                                                 "Yeah, I guess shopping really isn't my thing.":
                                                     kim "Hah! Yeah, most people wouldn't want to shop until 10 every day"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim will be out shopping until 10 o'clock PM tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Yeah that's pretty late!":
@@ -344,10 +386,16 @@ label talkKimItem:
                                     menu:
                                         "Oh, are the old ones beat up or something?":
                                             kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim has a very valuble high heel shoe.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -371,10 +419,16 @@ label talkKimItem:
                                     menu:
                                         "Oh, are the old ones beat up or something?":
                                             kim "Oh, the ones I have now are too valuable! I don't want to ruin them!"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim has a very valuble high heel shoe.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "I see, don't spend your whole day shopping though.":
-                                                    kim "Haha! I probably will though. Probably won't be back until 10 if I''m honest."
+                                                    kim "Haha! I probably will though. Probably won't be back until 10 o'clock PM if I''m honest."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Kim will be out until 10 o'clock PM tonight.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Alright, have fun!":
@@ -405,6 +459,9 @@ label talkKimItem:
                                     menu:
                                         "Yeah, I guess shopping really isn't my thing.":
                                             kim "Hah! Yeah, most people wouldn't want to shop until 10 every day"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Kim will be out shopping until 10 o'clock PM tonight.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Yeah that's pretty late!":
@@ -436,6 +493,9 @@ label talkKimItem:
                     kim "I have to go..."
                     $ curTimeMin = curTimeMin + timeConstant
     hide char kim
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -450,9 +510,19 @@ label talkKimNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                 "How are the neighbors?":
                     kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                    python:
+                        tempShort = shortTermMemory
+                        tempName = targetCharacterName
+                        tempRoom = targetCharacterRoom
+                        tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                     $ curTimeMin = curTimeMin + timeConstant
                 "Any updtes?":
                     kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                    python:
+                        tempShort = shortTermMemory
+                        tempName = targetCharacterName
+                        tempRoom = targetCharacterRoom
+                        tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                     $ curTimeMin = curTimeMin + timeConstant
         "Hey girl!":
             kim "Good day."
@@ -471,9 +541,19 @@ label talkKimNotItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "How are the neighbors?":
                                     kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempName = targetCharacterName
+                                        tempRoom = targetCharacterRoom
+                                        tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                 "Any updtes?":
                                     kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempName = targetCharacterName
+                                        tempRoom = targetCharacterRoom
+                                        tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                                     $ curTimeMin = curTimeMin + timeConstant
                         "Any suspicious activity?":
                             kim "Um, if there was, i'd report it..."
@@ -487,9 +567,19 @@ label talkKimNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "How are the neighbors?":
                             kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                             $ curTimeMin = curTimeMin + timeConstant
                         "Any updtes?":
                             kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                             $ curTimeMin = curTimeMin + timeConstant
         "Hey, How did you sleep?":
             kim "Oh, alright."
@@ -504,14 +594,27 @@ label talkKimNotItem:
                             $ curTimeMin = curTimeMin + timeConstant
                         "How are the neighbors?":
                             kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                             $ curTimeMin = curTimeMin + timeConstant
                         "Any updtes?":
                             kim "Well, [targetCharacterName] hasn't been too chatty lately, they seem pretty preoccupied. They just stay in room #[targetCharacterRoom] all day."
+                            python:
+                                tempShort = shortTermMemory
+                                tempName = targetCharacterName
+                                tempRoom = targetCharacterRoom
+                                tempShort.append("Kim says that, "+tempName+" in room #"+str(tempRoom)+"has not been too chatty lately.")
                             $ curTimeMin = curTimeMin + timeConstant
                 "Any suspicious activity?":
                     kim "Um, if there was, i'd report it..."
                     $ curTimeMin = curTimeMin + timeConstant
     hide char kim
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -530,7 +633,9 @@ label kimRoom:
 
         if curTimeHour >= targetCharacterHourOut:
             if curTimeHour < targetCharacterHourIn:
-                jim "[targetCharacterName] shouldn't be here now, it's [curTimeHour] [curTimeMin]"
+                python:
+                    theTime = getTime()
+                jim "[targetCharacterName] shouldn't be here now, it's [theTime]."
                 jim "now where should I look?"
                 menu:
                     "In the nightstand.":
