@@ -1,0 +1,18 @@
+Sources used for the CS side of things.
+	
+	http://lemmasoft.renai.us/
+	http://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=20720&sid=52cd5e2bac251da1679e16fe6756c607
+	http://lemmasoft.renai.us/forums/viewtopic.php?f=8&t=5481
+	http://lemmasoft.renai.us/forums/viewtopic.php?f=4&t=1857
+	http://www.i-programmer.info/programming/python/3942-arrays-in-python.html
+	http://stackoverflow.com/questions/802578/final-keyword-equivalent-for-variables-in-python
+	http://stackoverflow.com/questions/1712227/how-to-get-the-size-of-a-list
+	http://stackoverflow.com/questions/13732025/get-array-elements-from-index-to-end
+	http://stackoverflow.com/questions/2960772/putting-a-variable-inside-a-string-python
+	http://learnpythonthehardway.org/book/ex5.html
+	https://docs.python.org/2/library/functions.html#round
+	http://renpyhandbook.tumblr.com/code-tutorials
+	http://effbot.org/zone/python-list.htm
+	http://effbot.org/zone/python-list.htm#modifying
+	http://www.tutorialspoint.com/python/list_len.htm
+	
