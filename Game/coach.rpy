@@ -19,25 +19,34 @@ label talkCoachItem:
                     menu:
                         "What time is the kickoff?":
                             coach "8pm! I have a few tickets handy if you'd like to come!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Coach will be out of his room at 8:00 tonight.")
                             $ curTimeMin = curTimeMin + timeConstant
                             menu:
                                 "Sure! I'd love to!":
                                     coach "Here it is-oh wait..."
                                     coach "This is the other teams playbook! Better not leave that."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Mind if I take a look?":
-                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            coach "Sure! This is the edited version though, the real deal is in my closet."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach keeps his playbook in his closet.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                     coach "You're right. Gotta go study up, see you!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Good luck!":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "See Ya":
+                                                        "See ya.":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Sounds illegal...":
@@ -52,20 +61,26 @@ label talkCoachItem:
                                 "Maybe.":
                                     coach "Here it is - oh wait!"
                                     coach "This is the other teams playbook! Better not leave that."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Mind if I take a look?":
-                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            coach "Sure! This is the edited version though, the real deal is in my closet."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach keeps his playbook in his closet.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                     coach "You're right. Gotta go study up, see you!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Good luck!":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "See Ya":
+                                                        "See ya.":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Sounds illegal...":
@@ -89,10 +104,16 @@ label talkCoachItem:
                                     menu:
                                         "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
                                             coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach keeps his playbook in his closet.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "When is kickoff?":
                                                     coach "8pm, I have a spare ticket if you want."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach will be out of his room at 8:00pm")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Maybe!":
@@ -132,24 +153,33 @@ label talkCoachItem:
                             menu:
                                 "What time is the kickoff?":
                                     coach "8pm! I have a few tickets handy if you'd like to come!"
+                                    python:
+                                       tempShort = shortTermMemory
+                                       tempShort.append("Coach will be out of his room at 8:00 tonight.")
                                     menu:
                                         "Sure! I'd love to!":
                                             coach "Here it is-oh wait..."
                                             coach "This is the other teams playbook! Better not leave that."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Mind if I take a look?":
-                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach keeps his playbook in his closet.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
-                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                             coach "You're right. Gotta go study up, see you!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Good luck!":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "See Ya":
+                                                                "See ya.":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "Sounds illegal...":
@@ -164,20 +194,26 @@ label talkCoachItem:
                                         "Maybe.":
                                             coach "Here it is-oh wait..."
                                             coach "This is the other teams playbook! Better not leave that."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Mind if I take a look?":
-                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach keeps his playbook in his closet.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
-                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                             coach "You're right. Gotta go study up, see you!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Good luck!":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "See Ya":
+                                                                "See ya.":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "Sounds illegal...":
@@ -201,10 +237,16 @@ label talkCoachItem:
                                             menu:
                                                 "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
                                                     coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach keeps his playbook in his closet.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When is kickoff?":
                                                             coach "8pm, I have a spare ticket if you want."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Coach will be out of his room at 8:00pm")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Maybe!":
@@ -240,25 +282,34 @@ label talkCoachItem:
                             menu:
                                 "What time is the kickoff?":
                                     coach "8pm! I have a few tickets handy if you'd like to come!"
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Coach will be out of his room at 8:00 tonight.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Sure! I'd love to!":
                                             coach "Here it is-oh wait..."
                                             coach "This is the other teams playbook! Better not leave that."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Mind if I take a look?":
-                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach keeps his playbook in his closet.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
-                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                             coach "You're right. Gotta go study up, see you!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Good luck!":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "See Ya":
+                                                                "See ya.":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "Sounds illegal...":
@@ -273,20 +324,26 @@ label talkCoachItem:
                                         "Maybe.":
                                             coach "Here it is-oh wait..."
                                             coach "This is the other teams playbook! Better not leave that."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "Mind if I take a look?":
-                                                    coach "Sure! This is the edited version though, the real deal is in my closet"
+                                                    coach "Sure! This is the edited version though, the real deal is in my closet."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach keeps his playbook in his closet.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
-                                                        "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                        "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                             coach "You're right. Gotta go study up, see you!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Good luck!":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
-                                                                "See Ya":
+                                                                "See ya.":
                                                                     coach "Bye man!"
                                                                     $ curTimeMin = curTimeMin + timeConstant
                                                         "Sounds illegal...":
@@ -310,10 +367,16 @@ label talkCoachItem:
                                             menu:
                                                 "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
                                                     coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach keeps his playbook in his closet.")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "When is kickoff?":
                                                             coach "8pm, I have a spare ticket if you want."
+                                                            python:
+                                                                tempShort = shortTermMemory
+                                                                tempShort.append("Coach will be out of his room at 8:00pm")
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                             menu:
                                                                 "Maybe!":
@@ -348,24 +411,33 @@ label talkCoachItem:
                     menu:
                         "What time is the kickoff?":
                             coach "8pm! I have a few tickets handy if you'd like to come!"
+                            python:
+                                tempShort = shortTermMemory
+                                tempShort.append("Coach will be out of his room at 8:00 tonight.")
                             menu:
                                 "Sure! I'd love to!":
                                     coach "Here it is-oh wait..."
                                     coach "This is the other teams playbook! Better not leave that."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Mind if I take a look?":
-                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            coach "Sure! This is the edited version though, the real deal is in my closet."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach keeps his playbook in his closet.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                     coach "You're right. Gotta go study up, see you!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Good luck!":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "See Ya":
+                                                        "See ya.":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Sounds illegal...":
@@ -380,20 +452,26 @@ label talkCoachItem:
                                 "Maybe.":
                                     coach "Here it is-oh wait..."
                                     coach "This is the other teams playbook! Better not leave that."
+                                    python:
+                                        tempShort = shortTermMemory
+                                        tempShort.append("Coach has a playbook that he seems to be pretty protective of.")
                                     $ curTimeMin = curTimeMin + timeConstant
                                     menu:
                                         "Mind if I take a look?":
-                                            coach "Sure! This is the edited version though, the real deal is in my closet"
+                                            coach "Sure! This is the edited version though, the real deal is in my closet."
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach keeps his playbook in his closet.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
-                                                "Good idea, dont want to get caught stealing something you shouldn't have":
+                                                "Good idea, dont want to get caught stealing something you shouldn't have.":
                                                     coach "You're right. Gotta go study up, see you!"
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Good luck!":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
-                                                        "See Ya":
+                                                        "See ya.":
                                                             coach "Bye man!"
                                                             $ curTimeMin = curTimeMin + timeConstant
                                                 "Sounds illegal...":
@@ -417,10 +495,16 @@ label talkCoachItem:
                                     menu:
                                         "Ohhh, I see. Don't pull those out during the game. They have cameras everywhere these days.":
                                             coach "Tell me about it. I'm going to leave the playbook in my closet anyway"
+                                            python:
+                                                tempShort = shortTermMemory
+                                                tempShort.append("Coach keeps his playbook in his closet.")
                                             $ curTimeMin = curTimeMin + timeConstant
                                             menu:
                                                 "When is kickoff?":
                                                     coach "8pm, I have a spare ticket if you want."
+                                                    python:
+                                                        tempShort = shortTermMemory
+                                                        tempShort.append("Coach will be out of his room at 8:00pm")
                                                     $ curTimeMin = curTimeMin + timeConstant
                                                     menu:
                                                         "Maybe!":
@@ -448,6 +532,9 @@ label talkCoachItem:
                     coach "You just don't get me man!"
                     $ curTimeMin = curTimeMin + timeConstant
     hide char coach
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 
@@ -463,16 +550,32 @@ label talkCoachNotItem:
                     $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 2:
                         coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                        python:
+                            tempShort = shortTermMemory
+                            time = targetCharacterHourOut
+                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 3:
-                        coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
+                        coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                        python:
+                            tempShort = shortTermMemory
+                            time = targetCharacterHourOut
+                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                         $ curTimeMin = curTimeMin + timeConstant
                 "Who did this?":
                     if targetCharacterFloor == 2:
                         coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                        python:
+                            tempShort = shortTermMemory
+                            time = targetCharacterHourOut
+                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                         $ curTimeMin = curTimeMin + timeConstant
                     if targetCharacterFloor == 3:
                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                        python:
+                            tempShort = shortTermMemory
+                            time = targetCharacterHourOut
+                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                         $ curTimeMin = curTimeMin + timeConstant
                 "Have you heard something similar from anyone else?":
                     coach "No, but you should try to ask around."
@@ -495,16 +598,32 @@ label talkCoachNotItem:
                                     $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 2:
                                         coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                        python:
+                                            tempShort = shortTermMemory
+                                            time = targetCharacterHourOut
+                                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor.")
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 3:
-                                        coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
+                                        coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                                        python:
+                                            tempShort = shortTermMemory
+                                            time = targetCharacterHourOut
+                                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                                         $ curTimeMin = curTimeMin + timeConstant
                                 "Who did this?":
                                     if targetCharacterFloor == 2:
                                         coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                        python:
+                                            tempShort = shortTermMemory
+                                            time = targetCharacterHourOut
+                                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                                         $ curTimeMin = curTimeMin + timeConstant
                                     if targetCharacterFloor == 3:
                                         coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                                        python:
+                                            tempShort = shortTermMemory
+                                            time = targetCharacterHourOut
+                                            tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                                         $ curTimeMin = curTimeMin + timeConstant
                                 "Have you heard something similar from anyone else?":
                                     coach "No, but you should try to ask around."
@@ -521,16 +640,31 @@ label talkCoachNotItem:
                             coach "This was right around [targetCharacterHourOut] o'clock last night."
                             if targetCharacterFloor == 2:
                                 coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
-                                coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
+                                coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who did this?":
                             if targetCharacterFloor == 2:
                                 coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Have you heard something similar from anyone else?":
                             coach "No, but you should try to ask around."
@@ -548,16 +682,32 @@ label talkCoachNotItem:
                             coach "This was right around [targetCharacterHourOut] o'clock last night."
                             if targetCharacterFloor == 2:
                                 coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
-                                coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor"
+                                coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Who did this?":
                             if targetCharacterFloor == 2:
                                 coach "I'm not sure, but whoever they are, they were definitely on my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around on his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                             if targetCharacterFloor == 3:
                                 coach "I'm not sure, but whoever they are, they were stomping down the hall above my floor."
+                                python:
+                                    tempShort = shortTermMemory
+                                    time = targetCharacterHourOut
+                                    tempShort.append("Someone woke Coach up last night around "+toTime(time)+" by stomping around above his floor." )
                                 $ curTimeMin = curTimeMin + timeConstant
                         "Have you heard something similar from anyone else?":
                             coach "No, but you should try to ask around."
@@ -566,6 +716,9 @@ label talkCoachNotItem:
                     coach "Um... No, just saying. Oh, gotta go! See you!"
                     $ curTimeMin = curTimeMin + timeConstant
     hide char coach
+    if curTimeHour >= 20:
+        $ curTimeHour = 20
+        $ curTimeMin = 0
     jump homeScreen
     return
 

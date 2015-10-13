@@ -92,14 +92,13 @@ define roomNumber = 0
 define tempRandom = 0
 
 #Used for Memory
-
-define shortTermMemory = ["Turtles", "Food"]
-define longTermMemory = ["Soup", "bacon"]
+define shortTermMemory = []
+define longTermMemory = []
 
 define memoryIndex = 0
 
 #Time constant to advance time by per interaction with person.
-define timeConstant = 45
+define timeConstant = 30
 define morningConstant = 17
 define musicFadeoutConstant = 8.0
 
@@ -135,6 +134,20 @@ define targetCharacterHourIn       = 0
 # The game starts here.
 init:
     $ style.menu_choice.size = 44
+
+init python:
+    def toTime (time):
+        if time == 0 or time==24:
+            return "Midnight"
+        if time == 12:
+            return "Noon"
+
+        if time < 12:
+            time = time%12
+            return str(time)+" O'clock AM"
+        if time >= 12:
+            time = time%12
+            return str(time)+" O'clock PM"
 
 label start:
     play music music_menu
@@ -203,25 +216,24 @@ label initialize:
     show mnu bgDifficulty
     with dissolve
     show screen difficulty_btns
-    show screen journal
     $ renpy.pause(128.0)
     jump initialize
     return
 
 screen journal():
     fixed:
-        textbutton "" xalign 1 yalign 0 xsize 128 ysize 128 action Jump("recapLongTerm")
+        textbutton "" xalign 0.999 yalign 0 xsize 128 ysize 128 action Jump("recapLongTerm")
 
 label recapLongTerm:
     if memoryIndex < len(longTermMemory):
         $ temp = longTermMemory[memoryIndex]
         $ memoryIndex = memoryIndex + 1
         if temp != "":
-            jim "[temp]"
+            jim "I rememeber: [temp]"
             jump recapLongTerm
     $ memoryIndex = 0
-    jump sleepState
-    return
+    jump homeScreen
+
 
 screen difficulty_btns():
     fixed:
@@ -262,7 +274,7 @@ label doormanApartment:
     show bg jimRoom
     with dissolve
 
-    jump sleepState
+    jump talkCoach
 
     jim "*Yawn* Ugh... looks like it's going to be another boring day for me."
 
@@ -296,6 +308,7 @@ label jimSayTime:
 
 label homeScreen:
     # hide all names that could be up on the screen
+    show screen journal
     hide screen kimName
     hide screen edmundName
     hide screen coachName
@@ -328,6 +341,7 @@ label homeScreen:
     if curTimeHour >= 24:
         jim "Dang man, it's super late! I need to go to bed now."
         hide screen clock
+        hide screen journal
         jump sleepState
 
     if curTimeHour >= 20:
@@ -358,6 +372,7 @@ label homeScreen:
         manager "Take your last paychek, I'm sorry to do this Jim."
         hide item paycheck
         with dissolve
+        hide screen journal
         jump loseState
 
     define someoneAtDoor = 0
@@ -367,7 +382,6 @@ label homeScreen:
         $ someoneAtDoor = 0
     if talked_to_everyone == 1:
         $ someoneAtDoor = 0
-
     if daysLeft > 0:
         menu:
             "I'm gonna wait around for an hour or so." if curTimeHour >= 20:
@@ -384,12 +398,14 @@ label homeScreen:
                 hide clock clockPm
                 hide timeHour hour
                 hide timeMin minute
+                hide screen journal
                 jump elevator
             "It's late,I'll go to bed." if curTimeHour >= 20:
                 hide clock clock
                 hide clock clockPm
                 hide timeHour hour
                 hide timeMin minute
+                hide screen journal
                 jump sleepState
             "Oh! Someones at the door!" if someoneAtDoor == 1:
                 hide clock clock
@@ -397,6 +413,7 @@ label homeScreen:
                 hide timeHour hour
                 hide timeMin minute
                 $ curTimeHour = curTimeHour + 1
+                hide screen journal
                 jump pickChar
 
     hide bg lobby
@@ -626,12 +643,14 @@ label sleepRecap:
 
 label sleepRecapLoop:
     if shortTermMemory != []:
-        $ temp = shortTermMemory.pop(0)
+        python:
+            tempLong = longTermMemory
+            temp = shortTermMemory.pop(0)
+            tempLong.append(temp)
+
         if temp != "":
-            jim "[temp]"
+            jim "Today I learned [temp]"
             jump sleepRecapLoop
-            asdfasdfasdfawerqw
-            $ longTermMemory = ["1", "2", "3", "4", "5", "6"]
 
     jump initiateREM
     return
